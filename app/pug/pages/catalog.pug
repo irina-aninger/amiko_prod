@@ -1,0 +1,77 @@
+doctype html
+html(lang='UTF-8')
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1')
+        title Test
+        link(href='./css/libs.min.css', rel='stylesheet')
+        link(href='./css/style.min.css', rel='stylesheet')
+
+    body
+
+        include ../block/header
+
+        #catalog-category.section
+            .container
+                .h1 Каталог
+                    span Каталог
+            .category__wrapper
+                .category__item
+                    img.img__full(src='./img/category-1.png')
+                    .aling__center
+                        .catalog__title Экопродукция
+                        a.btn.btn__transp(href='#') В каталог
+                .category__item
+                    img.img__full(src='./img/category-10.png')
+                    .aling__center
+                        .catalog__title Бумажные стаканчики
+                        a.btn.btn__transp(href='#') В каталог
+                .category__item
+                    img.img__full(src='./img/category-11.png')
+                    .aling__center
+                        .catalog__title Крышки
+                        a.btn.btn__transp(href='#') В каталог
+                .category__item
+                    img.img__full(src='./img/category-12.png')
+                    .aling__center
+                        .catalog__title Упако
+                        a.btn.btn__transp(href='#') В каталог
+                .category__item
+                    img.img__full(src='./img/category-13.png')
+                    .aling__center
+                        .catalog__title Контейнеры
+                        a.btn.btn__transp(href='#') В каталог
+                .category__item
+                    img.img__full(src='./img/category-14.png')
+                    .aling__center
+                        .catalog__title Креманки
+                        a.btn.btn__transp(href='#') В каталог
+                .category__item
+                    img.img__full(src='./img/category-15.png')
+                    .aling__center
+                        .catalog__title Бумажная посуда
+                        a.btn.btn__transp(href='#') В каталог
+                .category__item
+                    img.img__full(src='./img/category-16.png')
+                    .aling__center
+                        .catalog__title Пакеты
+                        a.btn.btn__transp(href='#') В каталог
+                .category__item
+                    img.img__full(src='./img/category-17.png')
+                    .aling__center
+                        .catalog__title Другие товары
+                        a.btn.btn__transp(href='#') В каталог
+
+        .section.text__section
+            .container
+                .row
+                    .lg-12
+                        .h2 Описание раздела
+                            span О Разделе
+                    .text
+                        p Краткое описание: В данном блоке отображается информация о компании и преимуществах ее работы. Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке. Краткое описание: В данном блоке отображается информация о компании и преимуществах ее работы. Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке.
+                        p Краткое описание: В данном блоке отображается информация о компании и преимуществах ее работы. Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке.
+
+        include ../block/footer
+
+        script(src='./js/main.min.js')

@@ -1,0 +1,181 @@
+doctype html
+html(lang='UTF-8')
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1')
+        title Test
+        link(href='./css/libs.min.css', rel='stylesheet')
+        link(href='./css/style.min.css', rel='stylesheet')
+
+    body
+
+        include ../block/header
+
+        .main__slider
+            .slide__item
+                img.img__full(src='./img/slide-1.jpg')
+                .aling__center
+                    .slide__wrapper
+                        p.slide__title Экопродукция
+                        p.slide__sub-title Экологично и безопасно
+                        p.slide__desc ООО “Амик-О” является крупнейшим производителем и поставщиком бумажной продукции на территории Республики Беларусь. Компания создана в 1992 г. и на протяжении многих лет успешно работает на рынке упаковки.
+                        .slide__link
+                            a.btn(href='#') Подробнее
+
+        #our-production.section
+            .container
+                .h1 Наша продукция
+                    span Продукция
+            .category__wrapper
+                .category__item
+                    img.img__full(src='./img/category-1.png')
+                    .aling__center
+                        .catalog__title Экопродукция
+                        a.btn.btn__transp(href='#') В каталог
+                .category__item
+                    img.img__full(src='./img/category-2.png')
+                    .aling__center
+                        .catalog__title Бумажные стаканчики
+                        a.btn.btn__transp(href='#') В каталог
+                .category__item
+                    img.img__full(src='./img/category-3.png')
+                    .aling__center
+                        .catalog__title Крышки
+                        a.btn.btn__transp(href='#') В каталог
+                .category__item
+                    img.img__full(src='./img/category-4.png')
+                    .aling__center
+                        .catalog__title Упако
+                        a.btn.btn__transp(href='#') В каталог
+                .category__item
+                    img.img__full(src='./img/category-5.png')
+                    .aling__center
+                        .catalog__title Контейнеры
+                        a.btn.btn__transp(href='#') В каталог
+                .category__item
+                    img.img__full(src='./img/category-6.png')
+                    .aling__center
+                        .catalog__title Креманки
+                        a.btn.btn__transp(href='#') В каталог
+                .category__item
+                    img.img__full(src='./img/category-7.png')
+                    .aling__center
+                        .catalog__title Бумажная посуда
+                        a.btn.btn__transp(href='#') В каталог
+                .category__item
+                    img.img__full(src='./img/category-8.png')
+                    .aling__center
+                        .catalog__title Пакеты
+                        a.btn.btn__transp(href='#') В каталог
+                .category__item
+                    img.img__full(src='./img/category-9.png')
+                    .aling__center
+                        .catalog__title Другие товары
+                        a.btn.btn__transp(href='#') В каталог
+
+        #our-products.section.bg__gray
+            .container
+                .row
+                    .lg-8
+                        .h2 Наши товары
+                            span Товары
+                    .lg-4.tabs__filter
+                        input(type='radio' id='stock' checked)
+                        label(for='stock') Акции
+                        input(type='radio' id='new')
+                        label(for='new') Новинки
+                        input(type='radio' id='order')
+                        label(for='order') Под заказ
+                    .lg-12
+                        .row.products__wrapper
+                            .lg-3.products__item
+                                .products__img
+                                    img.img(src='./img/product-4.png')
+                                    .product__tags
+                                        span.sale Sale
+                                        span.new New
+                                .products__desc
+                                    a.products__title(href='#') Стаканчик бумажный однослойный,Кофе
+                                    ul.product__price
+                                        li.old__price 3,40 руб
+                                        li от 2,55 BYN/
+                                            span 1000 шт
+                                a.btn.btn_buy(href='#') Купить
+                            .lg-3.products__item
+                                .products__img
+                                    img.img(src='./img/product-2.png')
+                                    .product__tags
+                                        span.sale Sale
+                                        span.new New
+                                .products__desc
+                                    a.products__title(href='#') Стакан бумажный однослойный, белый
+                                    ul.product__price
+                                        li.old__price 3,40 руб
+                                        li от 2,55 BYN/
+                                            span 1000 шт
+                                a.btn.btn_buy(href='#') Купить
+                            .lg-3.products__item
+                                .products__img
+                                    img.img(src='./img/product-1.png')
+                                    .product__tags
+                                        span.sale Sale
+                                        span.new New
+                                .products__desc
+                                    a.products__title(href='#') Коробка бумажная для гамбургера Fiesta
+                                    ul.product__price
+                                        li.order Под заказ
+                                a.btn.btn_buy(href='#') Купить
+                            .lg-3.products__item
+                                .products__img
+                                    img.img(src='./img/product-3.png')
+                                    .product__tags
+                                        span.sale Sale
+                                        span.new New
+                                .products__desc
+                                    a.products__title(href='#') Обертка для фастфуд «Fiesta»
+                                    ul.product__price
+                                        li.old__price 3,40 руб
+                                        li от 2,55 BYN/
+                                            span 1000 шт
+                                a.btn.btn_buy(href='#') Купить
+
+        #about-company.section.text__section
+            .container
+                .row
+                    .lg-12
+                        .h2 О компании
+                            span О компании
+                    .lg-6
+                        .text
+                            p ООО “Амик-О” является крупнейшим производителем и поставщиком бумажной продукции на территории Республики Беларусь. Компания создана в 1992 г. и на протяжении многих лет успешно работает на рынке упаковки. Одним из основных и приоритетных направлений компании является реализация бумажной упаковки.
+                            p Независимые исследования показали, что при прочих равных условиях покупатели выбирают товары, имеющие стильную, прочную и экологичную упаковку. Именно поэтому так важно, как и во что упакована ваша продукция.
+                            a.btn(href='#') Подробнее
+                    .lg-6.about-company__img
+                        img(src='./img/image-1.png')
+
+        #faq.section.bg__beige
+            .container
+                .row
+                    .lg-6.faq__img
+                        img(src='./img/image-2.png')
+                    .lg-6.faq__wrapper
+                        .h2 Остались вопросы?
+                            span Вопросы?
+                        p Заполните форму связи и мы свяжемся с вами
+                        form#feedback.row.form.feedback__form(action='#' method='post')
+                            .lg-6
+                                input(type='text' name='name' value='' placeholder='Ваше имя*' id='name')
+                            .lg-6
+                                input(type='text' name='company-name' value='' placeholder='Название компании*' id='company-name')
+                            .lg-6
+                                input(type='phone' name='phone' value='' placeholder='Номер телефона*' id='phone')
+                            .lg-6
+                                input(type='email' name='email' value='' placeholder='E-mail' id='email')
+                            .lg-12
+                                textarea(name='message' placeholder='Сообщение' id='message')
+                            .lg-12
+                                input.btn.btn__submit(type='submit' value='Отправить')
+
+        include ../block/footer
+
+        script(src='./js/main.min.js')

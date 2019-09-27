@@ -1,0 +1,729 @@
+@import 'fonts.sass'
+@import 'grid.sass'
+
+//MIXIN
+@mixin x_large
+  @media (min-width: 1200px)
+    @content
+
+@mixin large
+  @media (max-width: 1199px)
+    @content
+
+@mixin medium
+  @media (max-width: 991px)
+    @content
+
+@mixin small
+  @media (max-width: 767px)
+    @content
+
+@mixin xs_small
+  @media (max-width: 575px)
+    @content
+//END MIXIN
+
+
+//ANIMATION
+//END ANIMATION
+
+
+html
+  box-sizing: border-box
+  -ms-overflow-style: scrollbar
+  scroll-behavior: smooth
+
+body
+  font: normal 16px/1em 'Opensans', sans-serif
+  line-height: 22px
+  color: #828589
+  background: rgba(247, 247, 247, 0.2)
+
+  &.open__modal
+    overflow: hidden
+
+*::before,
+*::after
+  box-sizing: inherit
+
+::placeholder
+  color: rgba(0, 0, 0, 0.33)
+  opacity: 1
+  font-size: 16px
+  font-style: italic
+
+button,
+input,
+textarea,
+select
+  &:focus
+    outline: none
+    outline-offset: 0
+
+input
+  font-size: 16px
+  border: none
+  line-height: 22px
+  border-radius: 5px
+  box-sizing: border-box
+  &[type='text'],
+  &[type='phone'],
+  &[type='email']
+    width: 100%
+  &[type='search']
+    font-size: 14px
+    &::placeholder
+      font-size: 14px
+      font-style: normal
+      color: #949491
+  &[type='submit']
+    display: inline-block
+    cursor: pointer
+
+textarea
+  border: none
+  border-radius: 5px
+  box-sizing: border-box
+  width: 100%
+  resize: none
+  line-height: 22px
+
+h1,
+h2,
+.h1,
+.h2
+  font: 24px Roboto, sans-serif
+  line-height: 33px
+  color: rgba(0, 0, 0, 0.65)
+  margin: 0
+
+.h1,
+.h2
+  position: relative
+  padding: 56px 0 47px 0
+  margin: 25px 0
+  span
+    position: absolute
+    left: 21px
+    font-size: 100px
+    font-weight: 800
+    color: rgba(0, 0, 0, 0.03)
+
+.h3
+  font-size: 20px
+  font-weight: 600
+  color: #545454
+  padding: 20px 0
+
+.title
+  font-weight: bold
+
+a
+  text-decoration: none
+  cursor: pointer
+  box-sizing: border-box
+
+  &:hover
+    color: #493F7B
+
+ul,
+li
+  padding: 0
+  margin: 0
+  list-style: none
+
+img
+  max-width: 100%
+  width: auto
+  height: auto
+  vertical-align: middle
+
+div
+  box-sizing: border-box
+
+.container
+  width: 100%
+  padding-right: 10px
+  padding-left: 10px
+  margin-right: auto
+  margin-left: auto
+  @include x_large
+    width: 1180px
+  @include large
+    width: 960px
+  @include medium
+    width: 720px
+  @include small
+    width: 540px
+  @include xs_small
+    width: auto
+
+.section
+  padding-top: 15px
+  &#about-company
+    margin-bottom: -70px
+    overflow: hidden
+  &#faq
+    margin-bottom: -315px
+  &#contacts
+    overflow: hidden
+  &.text__section
+    padding-top: 0
+    padding-bottom: 80px
+    .h2
+      margin-bottom: 0
+  &#delivery-1
+    padding: 0 0 75px 0
+    overflow: hidden
+  &#delivery-2
+    padding: 75px 0
+  &.bg__gray
+    background: rgba(247, 247, 247, 0.8)
+  &.bg__beige
+    background: url('.././img/bg-beige.png')
+
+.box
+  padding: 5px 0
+  a
+    padding: 5px 0
+  p
+    display: flex
+    flex-direction: column
+
+.btn
+  display: inline-flex
+  justify-content: center
+  align-items: center
+  background: #e56943
+  color: #fff
+  border-radius: 4px
+  padding: 11px 5px
+  width: 160px
+  &.btn__white
+    width: 110px
+    padding: 9px 5px
+    background: #FFFFFF
+    color: #2E2E2E
+    &:hover
+      color: #E56943
+  &.btn__transp
+    background: none
+    border: 1px solid #FFFFFF
+    &:hover
+      background: #E56943
+      color: #FFFFFF
+      border: none
+
+.img__full
+  position: absolute
+  width: 100%
+  height: 100%
+  object-fit: cover
+
+.aling__center
+  position: absolute
+  top: 0
+  width: 100%
+  height: 100%
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  color: #FFFFFF
+  line-height: initial
+  text-align: center
+
+.vertical__aling
+  align-items: center
+
+.logo
+  width: 130px
+
+.header__wrapper
+  padding: 25px 0 45px 0
+  .search
+    border-bottom: 1px solid #E4E4E4
+    padding: 9px 0 16px 0
+    position: relative
+    &::before
+      position: absolute
+      right: 3px
+      bottom: 6px
+      content: url('.././img/search-ico.svg')
+    input
+      width: 90%
+      color: #282828
+  .header__cart
+    align-self: flex-end
+    text-align: right
+    a
+      padding-right: 15px
+      position: relative
+    .cart__count
+      display: flex
+      align-items: center
+      justify-content: center
+      position: absolute
+      top: -16px
+      right: 0
+      width: 24px
+      height: 24px
+      font-size: 14px
+      color: #FFFFFF
+      background: #342E58
+      border-radius: 50%
+
+.header__navbar
+  background: #E56943
+  padding: 11px 0
+  .container
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.navbar__wrapper
+  display: flex
+  position: relative
+  > li
+    position: relative
+    padding-right: 59px
+    text-transform: uppercase
+    font-weight: bold
+    &:last-child
+      padding-right: 0
+    a
+      color: rgba(255, 255, 255, 0.8)
+  .catalog__menu
+    display: none
+    position: absolute
+    top: 42px
+    left: -20px
+    background: #FDFDFD
+    box-shadow: 0 10px 16px rgba(0, 0, 0, 0.25)
+    z-index: 10
+    li
+      padding: 16px 45px 16px 20px
+      &:hover
+        background: #E9E6FF
+      &:last-child
+        background: #F3F3F3
+      a
+        display: flex
+        color: #333333
+        text-transform: initial
+        font-weight: 600
+        span
+          display: flex
+          align-items: center
+          padding-right: 20px
+      img
+        max-width: 20px
+        max-height: 20px
+  .catalog__submenu
+    display: none
+
+.slide__item
+  display: flex
+  justify-content: center
+  align-items: center
+  position: relative
+  height: 733px
+  overflow: hidden
+  .aling__center
+    .slide__wrapper
+      width: 80%
+      padding: 15px
+    p
+      margin: 0
+    .slide__title
+      font-size: 100px
+      font-weight: bold
+    .slide__sub-title
+      font-size: 46px
+      font-weight: 300
+    .slide__desc
+      font-weight: 400
+      line-height: 1.7em
+      width: 48%
+      margin: 15px auto
+    .slide__link
+      margin-top: 45px
+
+.category__wrapper
+  display: flex
+  flex-wrap: wrap
+  overflow: hidden
+  .category__item
+    display: flex
+    justify-content: center
+    height: 390px
+    width: calc(100%/3)
+    overflow: hidden
+    position: relative
+    .aling__center
+      background: rgba(0, 0, 0, 0.4)
+    .catalog__title
+      font-size: 28px
+    .btn
+      position: absolute
+      margin-top: 70px
+      opacity: 0
+    &:hover
+      .btn
+        opacity: 1
+
+.tabs__filter
+  display: flex
+  align-items: center
+  justify-content: flex-end
+  input
+    width: 0
+    display: none
+    &:checked + [for]
+      border: 1px solid #E56943
+      border-radius: 3px
+      padding: 5px 19px
+      font-weight: 600
+  label
+    color: #606060
+    padding: 5px 19px
+    margin-right: 10px
+    margin-top: 10px
+    box-sizing: border-box
+    cursor: pointer
+    &:last-child
+      padding-right: 0
+      margin-right: 0
+
+.product__tags
+  display: flex
+  flex-direction: column
+  position: absolute
+  left: 16px
+  top: 12px
+  font-size: 12px
+  color: #FFFFFF
+  text-transform: uppercase
+  span
+    padding: 0 8px
+    margin-bottom: 9px
+    &:last-child
+      margin-bottom: 0
+    &.sale
+      background: #E56943
+    &.new
+      background: #342E58
+
+.product__price
+  display: flex
+  justify-content: space-between
+  padding: 17px 0 29px 0
+  color: #E56943
+  font-size: 20px
+  font-weight: 600
+  .old__price
+    font-size: 16px
+    font-weight: normal
+    color: rgba(96, 96, 96, 0.5)
+  span
+    font-size: 16px
+    font-weight: normal
+    color: rgba(96, 96, 96, 0.5)
+  .order
+    color: #342E58
+
+.products__wrapper
+  padding-bottom: 55px
+  .products__item
+    position: relative
+    padding-bottom: 30px
+    &:hover
+      &::before
+        content: ''
+        position: absolute
+        left: 0
+        width: 100%
+        height: calc(100% + 34px)
+        background: #FFFFFF
+        box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.15)
+        border-radius: 5px
+        z-index: 1
+      .products__img,
+      .products__desc
+        z-index: 2
+      .btn_buy
+        display: inline-block
+    .products__img
+      display: flex
+      align-items: center
+      justify-content: center
+      height: 338px
+      background: #FFFFFF
+      border-radius: 5px
+      position: relative
+    .product__tags
+      left: 16px
+      top: 12px
+    .products__desc
+      position: relative
+      padding: 25px 0 0
+      line-height: 1.5rem
+      a
+        &:not(.btn)
+          color: #606060
+    .products__title
+      height: 50px
+      display: block
+    .btn_buy
+      display: none
+      position: absolute
+      width: calc(100% - 20px)
+      text-align: center
+      box-sizing: border-box
+      z-index: 20
+      &:hover
+        box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.3)
+
+.text
+  line-height: 1.5rem
+  p
+    margin: 0 0 30px 0
+  .btn
+    margin-top: 20px
+
+.about-company__img
+  img
+    max-width: 982px
+    position: relative
+    top: -100px
+
+.faq__img
+  img
+    max-width: 1019px
+    position: relative
+    left: -265px
+    top: -235px
+
+.logotype__img
+  img
+    max-width: 793px
+    position: relative
+    top: -45px
+    left: -80px
+    z-index: -1
+
+.delivery__img
+  img
+    max-width: 868px
+    position: absolute
+    top: -150px
+    left: -100px
+
+.faq__wrapper
+  .h2
+    margin: 0
+    padding: 40px 0 0
+    span
+      top: 20px
+  p
+    font-size: 18px
+    font-weight: 300
+    color: rgba(0, 0, 0, 0.8)
+    padding-bottom: 20px
+
+.form
+  input
+    padding: 12px 14px 10px 14px
+    margin-bottom: 20px
+  textarea
+    padding: 10px 30px
+    height: 84px
+    margin-bottom: 28px
+  .btn__submit
+    padding: 15px 40px
+
+.contacts__wrapper
+  padding-top: 25px
+  margin-bottom: -5px
+  padding-left: 100px
+  .box
+    margin-bottom: 6px
+    .title
+      color: #E56943
+      margin: 0
+    a,
+    p
+      color: rgba(96, 96, 96, 0.5)
+
+.category__page
+  .section
+    .h2
+      margin: 0
+      padding: 0 0 35px
+      z-index: 2
+    &.text__section
+      .h2
+        margin: 0
+        padding: 0 0 47px
+        z-index: 2
+  .product__tags
+    .new
+      background: #2B2B2B
+
+.breadcrumbs
+  padding: 35px 10px 50px
+  a
+    color: rgba(0, 0, 0, 0.2)
+    padding-right: 50px
+    position: relative
+    &::after
+      content: url("data:image/svg+xml,%3Csvg width='21' height='8' viewBox='0 0 21 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.3536 4.35355C20.5488 4.15829 20.5488 3.84171 20.3536 3.64645L17.1716 0.464466C16.9763 0.269204 16.6597 0.269204 16.4645 0.464466C16.2692 0.659728 16.2692 0.976311 16.4645 1.17157L19.2929 4L16.4645 6.82843C16.2692 7.02369 16.2692 7.34027 16.4645 7.53553C16.6597 7.7308 16.9763 7.7308 17.1716 7.53553L20.3536 4.35355ZM0 4.5H20V3.5H0V4.5Z' fill='black' fill-opacity='0.2'/%3E%3C/svg%3E%0A")
+      position: absolute
+      right: 15px
+    &.active
+      color: rgba(0, 0, 0, 0.5)
+      padding-right: 0
+      &::after
+        content: none
+
+.sort__wrapper
+  color: rgba(0, 0, 0, 0.2)
+  text-align: right
+  padding-bottom: 45px
+  select
+    color: #E56943
+    border: none
+    background: transparent
+
+.dropdown__menu
+  li
+    a
+      display: flex
+      align-items: center
+      position: relative
+      color: #606060
+      padding: 13px 13px 19px 23px
+      &::after
+        content: ''
+        position: absolute
+        bottom: 0
+        width: 92%
+        height: 1px
+        background: rgba(96, 96, 96, 0.2)
+        opacity: 0.6
+    span
+      display: flex
+      align-items: center
+      justify-content: center
+    img
+      padding-right: 16px
+      max-width: 22px
+      max-height: 22px
+    &:last-child
+      a
+        &::after
+          content: none
+    .arrow
+      position: absolute
+      right: 0
+      width: 40px
+      height: 40px
+      &::before
+        content: ''
+        position: absolute
+        top: 13px
+        right: 17px
+        width: 12px
+        height: 12px
+        border-bottom: 1px solid #8D8D8D
+        border-left: 1px solid #8D8D8D
+        transform: rotate(-135deg)
+  .dropdown__item
+    &.active
+      > a
+        color: #FFFFFF
+        background: #342E58
+        img
+          filter: sepia(100) brightness(100)
+        .arrow
+          &::before
+            top: 10px
+            right: 13px
+            border-bottom: 1px solid #FFFFFF
+            border-left: 1px solid #FFFFFF
+            transform: rotate(-45deg)
+
+.dropdown__submenu
+  li
+    a
+      background: #F5F3FF
+      &::after
+        content: none
+
+.filter__wrapper
+  margin-right: 30px
+  .filter__box
+    display: flex
+    flex-direction: column
+    padding: 19px 0 24px
+    border-bottom: 0.6px solid rgba(0, 0, 0, 0.2)
+    &:first-child
+      padding: 10px 0 24px
+  .title
+    color: rgba(0, 0, 0, 0.7)
+    padding-bottom: 16px
+  input
+    width: 0
+    display: none
+    &:checked
+      &+[for]
+        &::before
+          background: #342E58 url("data:image/svg+xml,%3Csvg width='10' height='8' viewBox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.85356 0.474458C9.65831 0.279185 9.34175 0.279185 9.14645 0.474458L3.15614 6.46483L0.853564 4.16225C0.658311 3.96698 0.341748 3.967 0.146455 4.16225C-0.0488184 4.3575 -0.0488184 4.67407 0.146455 4.86934L2.80259 7.52543C2.99778 7.72069 3.31458 7.72055 3.5097 7.52543L9.85356 1.18157C10.0488 0.986313 10.0488 0.669731 9.85356 0.474458Z' fill='white'/%3E%3C/svg%3E ") no-repeat center
+          border: 1px solid #342E58
+  label
+    font-size: 14px
+    color: rgba(0, 0, 0, 0.5)
+    padding-bottom: 11px
+    padding-left: 23px
+    position: relative
+    cursor: pointer
+    &:last-child
+      padding-bottom: 0
+    &::before
+      content: ''
+      position: absolute
+      left: 0
+      top: 2px
+      width: 16px
+      height: 16px
+      border: 1px solid #C4C4C4
+      border-radius: 3px
+
+footer
+  background: #342E58
+  color: #898594
+  padding: 47px 0
+  a
+    color: #898594
+  .title
+    color: #F7FDFF
+  .footer__navbar
+    margin-top: 80px
+    text-align: center
+    a
+      position: relative
+      padding: 0 16px
+      &:last-child
+        &::after
+          content: none
+      &::after
+        content: ''
+        position: absolute
+        right: 0
+        top: 0
+        bottom: 0
+        margin: auto
+        height: 10px
+        width: 1px
+        background: rgba(137, 133, 148, 0.5)
+

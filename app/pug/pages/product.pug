@@ -1,0 +1,68 @@
+doctype html
+html(lang='UTF-8')
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1')
+        title Test
+        link(href='./css/libs.min.css', rel='stylesheet')
+        link(href='./css/style.min.css', rel='stylesheet')
+
+    body
+
+        include ../block/header
+
+        .section
+            .container
+                .row
+                    .lg-12.breadcrumbs
+                        a(href='#') Главная
+                        a(href='#') Каталог
+                        a.active(href='#') Стаканы
+                    .lg-12
+                        .row.product__wrapper
+                            .lg-6.product__img
+                                img.img(src='./img/product-4.png')
+                                .product__tags
+                                    span.sale Sale
+                                    span.new New
+                            .lg-6
+                                .product__title
+                                ul.product__price
+                                    li 2,55 BYN/
+                                        span 1000 шт
+                                    li.old__price 3,40 руб
+                                ul.property__wrapper
+                                    li
+                                        span.title Размер,
+                                        | мм
+                                    li
+                                        span.title Артикул:
+                                        | АР215-567
+                                    li
+                                        span.title Описание стакана:
+                                        | Стакан гофрированный, двухслойный
+                                    li
+                                        span.title Размер:
+                                        | d1- 80 х d2 - 56 х h - 92
+                                    li
+                                        span.title Материал:
+                                        | PAP+1PE
+                                    li
+                                        span.title Плотность:
+                                        | 260+18PE 120/120  г/м2;
+                                .product__count
+                                    span.minus
+                                    input(type='number' value='1')
+                                    span.plus
+                                ul.product__quantity
+                                    li Количество в кробке:
+                                        span 500 шт
+                                    li Количество в упаковке:
+                                        span 25 шт
+                                .btn__box
+                                    a#order.btn(href='#') Заказать
+                                    a#add-cart.btn(href='#') В корзину
+
+        include ../block/footer
+
+        script(src='./js/main.min.js')

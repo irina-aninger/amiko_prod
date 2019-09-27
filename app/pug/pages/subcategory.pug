@@ -1,0 +1,181 @@
+doctype html
+html(lang='UTF-8')
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1')
+        title Test
+        link(href='./css/libs.min.css', rel='stylesheet')
+        link(href='./css/style.min.css', rel='stylesheet')
+
+    body.category__page
+
+        include ../block/header
+
+        .section
+            .container
+                .row
+                    .lg-12.breadcrumbs
+                        a(href='#') Главная
+                        a(href='#') Каталог
+                        a(href='#') Бумажные стаканчики
+                        a.active(href='#') Стаканы однослойные
+                    .lg-12
+                        .row.vertical__aling
+                            .lg-9
+                                .h2 Стаканы однослойные
+                                    span Для горячего
+                            .lg-3.sort__wrapper
+                                | Сортировать по:
+                                select
+                                    option(selected) Цене
+                    .lg-3
+                        .filter__wrapper
+                            .filter__box
+                                .title Цена/1000 шт
+                                input(type='checkbox' id='price-1')
+                                label(for='price-1') 100-120 BYN
+                                input(type='checkbox' id='price-2' checked)
+                                label(for='price-2') 120-140 BYN
+                                input(type='checkbox' id='price-3')
+                                label(for='price-3') 140-160 BYN
+                                input(type='checkbox' id='price-4' checked)
+                                label(for='price-4') 160-180 BYN
+                            .filter__box
+                                .title Объем
+                                input(type='checkbox' id='volume-1')
+                                label(for='volume-1') 30 мл
+                                input(type='checkbox' id='volume-2' checked)
+                                label(for='volume-2') 50 мл
+                                input(type='checkbox' id='volume-3')
+                                label(for='volume-3') 100 мл
+                                input(type='checkbox' id='volume-4' checked)
+                                label(for='volume-4') 150 мл
+                            .filter__box
+                                .title Характеристика
+                                input(type='checkbox' id='property-1')
+                                label(for='property-1') Для холодного
+                                input(type='checkbox' id='property-2' checked)
+                                label(for='property-2') Для горячего
+                    .lg-9
+                        .row.products__wrapper
+                            .lg-4.products__item
+                                .products__img
+                                    img.img(src='./img/product-4.png')
+                                    .product__tags
+                                        span.sale Sale
+                                        span.new New
+                                .products__desc
+                                    a.products__title(href='#') Стаканчик бумажный однослойный,Кофе
+                                    ul.product__price
+                                        li.old__price 3,40 руб
+                                        li от 2,55 BYN/
+                                            span 1000 шт
+                                a.btn.btn_buy(href='#') Купить
+                            .lg-4.products__item
+                                .products__img
+                                    img.img(src='./img/product-2.png')
+                                    .product__tags
+                                        span.sale Sale
+                                .products__desc
+                                    a.products__title(href='#') Стакан бумажный однослойный, белый
+                                    ul.product__price
+                                        li.old__price 3,40 руб
+                                        li от 2,55 BYN/
+                                            span 1000 шт
+                                a.btn.btn_buy(href='#') Купить
+                            .lg-4.products__item
+                                .products__img
+                                    img.img(src='./img/product-1.png')
+                                    .product__tags
+                                        span.sale Sale
+                                .products__desc
+                                    a.products__title(href='#') Коробка бумажная для гамбургера Fiesta
+                                    ul.product__price
+                                        li.order Под заказ
+                                a.btn.btn_buy(href='#') Купить
+                            .lg-4.products__item
+                                .products__img
+                                    img.img(src='./img/product-2.png')
+                                    .product__tags
+                                        span.new New
+                                .products__desc
+                                    a.products__title(href='#') Обертка для фастфуд «Fiesta»
+                                    ul.product__price
+                                        li.old__price 3,40 руб
+                                        li от 2,55 BYN/
+                                            span 1000 шт
+                                a.btn.btn_buy(href='#') Купить
+                            .lg-4.products__item
+                                .products__img
+                                    img.img(src='./img/product-1.png')
+                                    .product__tags
+                                        span.sale Sale
+                                        span.new New
+                                .products__desc
+                                    a.products__title(href='#') Обертка для фастфуд «Fiesta»
+                                    ul.product__price
+                                        li.old__price 3,40 руб
+                                        li от 2,55 BYN/
+                                            span 1000 шт
+                                a.btn.btn_buy(href='#') Купить
+                            .lg-4.products__item
+                                .products__img
+                                    img.img(src='./img/product-3.png')
+                                    .product__tags
+                                        span.sale Sale
+                                        span.new New
+                                .products__desc
+                                    a.products__title(href='#') Обертка для фастфуд «Fiesta»
+                                    ul.product__price
+                                        li.old__price 3,40 руб
+                                        li от 2,55 BYN/
+                                            span 1000 шт
+                                a.btn.btn_buy(href='#') Купить
+                            .lg-4.products__item
+                                .products__img
+                                    img.img(src='./img/product-1.png')
+                                    .product__tags
+                                        span.new New
+                                .products__desc
+                                    a.products__title(href='#') Обертка для фастфуд «Fiesta»
+                                    ul.product__price
+                                        li.old__price 3,40 руб
+                                        li от 2,55 BYN/
+                                            span 1000 шт
+                                a.btn.btn_buy(href='#') Купить
+                            .lg-4.products__item
+                                .products__img
+                                    img.img(src='./img/product-3.png')
+                                    .product__tags
+                                        span.new New
+                                .products__desc
+                                    a.products__title(href='#') Обертка для фастфуд «Fiesta»
+                                    ul.product__price
+                                        li.old__price 3,40 руб
+                                        li от 2,55 BYN/
+                                            span 1000 шт
+                                a.btn.btn_buy(href='#') Купить
+                            .lg-4.products__item
+                                .products__img
+                                    img.img(src='./img/product-2.png')
+                                    .product__tags
+                                        span.sale Sale
+                                .products__desc
+                                    a.products__title(href='#') Обертка для фастфуд «Fiesta»
+                                    ul.product__price
+                                        li.old__price 3,40 руб
+                                        li от 2,55 BYN/
+                                            span 1000 шт
+                                a.btn.btn_buy(href='#') Купить
+
+        .section.text__section
+            .container
+                .h2 Описание раздела
+                    span О Разделе
+                .text
+                    p Краткое описание: В данном блоке отображается информация о компании и преимуществах ее работы. Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке. Краткое описание: В данном блоке отображается информация о компании и преимуществах ее работы. Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке.
+                    p Краткое описание: В данном блоке отображается информация о компании и преимуществах ее работы. Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке.
+
+        include ../block/footer
+
+        script(src='./js/main.min.js')
