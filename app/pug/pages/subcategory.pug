@@ -21,44 +21,47 @@ html(lang='UTF-8')
                         a.active(href='#') Стаканы однослойные
                     .lg-12
                         .row.vertical__aling
-                            .lg-9
+                            .lg-9.md-12
                                 .h2 Стаканы однослойные
                                     span Для горячего
                             .lg-3.sort__wrapper
                                 | Сортировать по:
                                 select
                                     option(selected) Цене
-                    .lg-3
+                    .lg-3.md-12
                         .filter__wrapper
                             .filter__box
                                 .title Цена/1000 шт
-                                input(type='checkbox' id='price-1')
-                                label(for='price-1') 100-120 BYN
-                                input(type='checkbox' id='price-2' checked)
-                                label(for='price-2') 120-140 BYN
-                                input(type='checkbox' id='price-3')
-                                label(for='price-3') 140-160 BYN
-                                input(type='checkbox' id='price-4' checked)
-                                label(for='price-4') 160-180 BYN
+                                input.none(type='checkbox' id='price-1')
+                                label.label(for='price-1') 100-120 BYN
+                                input.none(type='checkbox' id='price-2' checked)
+                                label.label(for='price-2') 120-140 BYN
+                                input.none(type='checkbox' id='price-3')
+                                label.label(for='price-3') 140-160 BYN
+                                input.none(type='checkbox' id='price-4' checked)
+                                label.label(for='price-4') 160-180 BYN
                             .filter__box
                                 .title Объем
-                                input(type='checkbox' id='volume-1')
-                                label(for='volume-1') 30 мл
-                                input(type='checkbox' id='volume-2' checked)
-                                label(for='volume-2') 50 мл
-                                input(type='checkbox' id='volume-3')
-                                label(for='volume-3') 100 мл
-                                input(type='checkbox' id='volume-4' checked)
-                                label(for='volume-4') 150 мл
+                                input.none(type='checkbox' id='volume-1')
+                                label.label(for='volume-1') 30 мл
+                                input.none(type='checkbox' id='volume-2' checked)
+                                label.label(for='volume-2') 50 мл
+                                input.none(type='checkbox' id='volume-3')
+                                label.label(for='volume-3') 100 мл
+                                input.none(type='checkbox' id='volume-4' checked)
+                                label.label(for='volume-4') 150 мл
                             .filter__box
                                 .title Характеристика
-                                input(type='checkbox' id='property-1')
-                                label(for='property-1') Для холодного
-                                input(type='checkbox' id='property-2' checked)
-                                label(for='property-2') Для горячего
-                    .lg-9
+                                input.none(type='checkbox' id='property-1')
+                                label.label(for='property-1') Для холодного
+                                input.none(type='checkbox' id='property-2' checked)
+                                label.label(for='property-2') Для горячего
+                            .mobile__visible.filter__btn
+                                a.btn(href='#') Отправить
+
+                    .lg-9.md-12
                         .row.products__wrapper
-                            .lg-4.products__item
+                            .lg-4.md-6.products__item
                                 .products__img
                                     img.img(src='./img/product-4.png')
                                     .product__tags
@@ -71,7 +74,7 @@ html(lang='UTF-8')
                                         li от 2,55 BYN/
                                             span 1000 шт
                                 a.btn.btn_buy(href='#') Купить
-                            .lg-4.products__item
+                            .lg-4.md-6.products__item
                                 .products__img
                                     img.img(src='./img/product-2.png')
                                     .product__tags
@@ -83,7 +86,7 @@ html(lang='UTF-8')
                                         li от 2,55 BYN/
                                             span 1000 шт
                                 a.btn.btn_buy(href='#') Купить
-                            .lg-4.products__item
+                            .lg-4.md-6.products__item
                                 .products__img
                                     img.img(src='./img/product-1.png')
                                     .product__tags
@@ -93,7 +96,7 @@ html(lang='UTF-8')
                                     ul.product__price
                                         li.order Под заказ
                                 a.btn.btn_buy(href='#') Купить
-                            .lg-4.products__item
+                            .lg-4.md-6.products__item
                                 .products__img
                                     img.img(src='./img/product-2.png')
                                     .product__tags
@@ -105,7 +108,7 @@ html(lang='UTF-8')
                                         li от 2,55 BYN/
                                             span 1000 шт
                                 a.btn.btn_buy(href='#') Купить
-                            .lg-4.products__item
+                            .lg-4.md-6.products__item
                                 .products__img
                                     img.img(src='./img/product-1.png')
                                     .product__tags
@@ -118,7 +121,7 @@ html(lang='UTF-8')
                                         li от 2,55 BYN/
                                             span 1000 шт
                                 a.btn.btn_buy(href='#') Купить
-                            .lg-4.products__item
+                            .lg-4.md-6.products__item
                                 .products__img
                                     img.img(src='./img/product-3.png')
                                     .product__tags
@@ -131,7 +134,7 @@ html(lang='UTF-8')
                                         li от 2,55 BYN/
                                             span 1000 шт
                                 a.btn.btn_buy(href='#') Купить
-                            .lg-4.products__item
+                            .lg-4.md-6.products__item
                                 .products__img
                                     img.img(src='./img/product-1.png')
                                     .product__tags
@@ -143,7 +146,7 @@ html(lang='UTF-8')
                                         li от 2,55 BYN/
                                             span 1000 шт
                                 a.btn.btn_buy(href='#') Купить
-                            .lg-4.products__item
+                            .lg-4.md-6.products__item
                                 .products__img
                                     img.img(src='./img/product-3.png')
                                     .product__tags
@@ -155,7 +158,7 @@ html(lang='UTF-8')
                                         li от 2,55 BYN/
                                             span 1000 шт
                                 a.btn.btn_buy(href='#') Купить
-                            .lg-4.products__item
+                            .lg-4.md-6.products__item
                                 .products__img
                                     img.img(src='./img/product-2.png')
                                     .product__tags
@@ -178,4 +181,5 @@ html(lang='UTF-8')
 
         include ../block/footer
 
+        script(src='./js/libs.min.js')
         script(src='./js/main.min.js')

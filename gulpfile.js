@@ -66,18 +66,16 @@ gulp.task('scripts', function () {
         .pipe(gulp.dest('app/js'))
 });
 
-// gulp.task('scripts-libs', function() {
-//     return gulp.src([
-//         'app/js/libs/jquery.js',
-//         'app/js/libs/parallax.min.js',
-//         'app/js/libs/wow.min.js'
-//     ])
-//         .pipe(concat('libs.js')) // Собираем их в кучу в новом файле libs.min.js
-//         .pipe(jsmin())
-//         .pipe(rename({suffix: '.min'}))
-//         .pipe(changed('app/js/libs'))
-//         .pipe(gulp.dest('app/js'));
-// });
+gulp.task('scripts-libs', function() {
+    return gulp.src([
+        'app/js/libs/jquery.js'
+    ])
+        .pipe(concat('libs.js'))
+        .pipe(jsmin())
+        .pipe(rename({suffix: '.min'}))
+        .pipe(changed('app/js/libs'))
+        .pipe(gulp.dest('app/js'));
+});
 
 gulp.task('pug', function () {
     return gulp.src('app/pug/pages/*.pug')
@@ -121,10 +119,8 @@ gulp.task('browser-sync', function () {
 });
 
 // gulp.task('scripts_libs', function() {
-//     return gulp.src([ // Берем все необходимые библиотеки
-//         'app/libs/jquery/dist/jquery.js',
-//         'app/libs/slick-carousel/slick/slick.min.js',
-//         'app/libs/wow/dist/wow.min.js'
+//     return gulp.src([
+//         'app/js/libs/jquery.js'
 //     ])
 //         .pipe(concat('libs.min.js'))
 //         .pipe(uglify())
@@ -193,5 +189,5 @@ gulp.task('watch', function () {
 
 // Build tasks
 
-gulp.task('default', gulp.parallel('pug', 'sass', 'css-libs', 'scripts', 'browser-sync', 'watch'));
+gulp.task('default', gulp.parallel('pug', 'sass', 'css-libs', 'scripts', 'scripts-libs', 'browser-sync', 'watch'));
 gulp.task('build', gulp.parallel('clean', 'prebuild'));

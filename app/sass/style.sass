@@ -37,7 +37,11 @@ body
   font: normal 16px/1em 'Opensans', sans-serif
   line-height: 22px
   color: #828589
-  background: rgba(247, 247, 247, 0.2)
+  background: #fdfdfd
+  @include medium
+    font-size: 14px
+    line-height: 19px
+    background: #f9f9f9
 
   &.open__modal
     overflow: hidden
@@ -51,6 +55,8 @@ body
   opacity: 1
   font-size: 16px
   font-style: italic
+  @include medium
+    font-size: 12px
 
 button,
 input,
@@ -66,6 +72,14 @@ input
   line-height: 22px
   border-radius: 5px
   box-sizing: border-box
+  @include medium
+    font-size: 12px
+  &::-webkit-outer-spin-button
+    -webkit-appearance: none
+    margin: 0
+  &::-webkit-inner-spin-button
+    -webkit-appearance: none
+    margin: 0
   &[type='text'],
   &[type='phone'],
   &[type='email']
@@ -92,28 +106,40 @@ h1,
 h2,
 .h1,
 .h2
-  font: 24px Roboto, sans-serif
+  font-size: 24px
   line-height: 33px
   color: rgba(0, 0, 0, 0.65)
   margin: 0
+  @include medium
+    font-size: 20px
 
 .h1,
 .h2
   position: relative
   padding: 56px 0 47px 0
   margin: 25px 0
+  @include medium
+    padding: 10px 0 0
   span
     position: absolute
     left: 21px
     font-size: 100px
     font-weight: 800
     color: rgba(0, 0, 0, 0.03)
+    @include medium
+      font-size: 50px
+      top: 0
+      width: max-content
 
 .h3
   font-size: 20px
   font-weight: 600
   color: #545454
   padding: 20px 0
+  @include medium
+    font-size: 16px
+    line-height: 26px
+    padding: 8px 0
 
 .title
   font-weight: bold
@@ -153,6 +179,8 @@ div
     width: 960px
   @include medium
     width: 720px
+    padding-right: 20px
+    padding-left: 20px
   @include small
     width: 540px
   @include xs_small
@@ -160,23 +188,40 @@ div
 
 .section
   padding-top: 15px
+  @include medium
+    overflow: hidden
   &#about-company
     margin-bottom: -70px
     overflow: hidden
+    @include medium
+      margin-bottom: 0
   &#faq
     margin-bottom: -315px
+    @include medium
+      margin-bottom: 0
+      overflow: hidden
   &#contacts
     overflow: hidden
   &.text__section
     padding-top: 0
     padding-bottom: 80px
+    @include medium
+      padding-top: 15px
+      padding-bottom: 55px
+      overflow: hidden
     .h2
       margin-bottom: 0
+      @include medium
+        margin-bottom: 17px
   &#delivery-1
     padding: 0 0 75px 0
     overflow: hidden
+    @include medium
+      padding: 0 0 32px 0
   &#delivery-2
     padding: 75px 0
+    @include medium
+      padding: 33px 0
   &.bg__gray
     background: rgba(247, 247, 247, 0.8)
   &.bg__beige
@@ -197,8 +242,13 @@ div
   background: #e56943
   color: #fff
   border-radius: 4px
-  padding: 11px 5px
+  //padding: 11px 5px
+  padding: 13px 5px
   width: 160px
+  &:hover
+    color: #fff
+  @include medium
+    font-size: 16px
   &.btn__white
     width: 110px
     padding: 9px 5px
@@ -236,15 +286,39 @@ div
 .vertical__aling
   align-items: center
 
+.mobile__hidden
+  @include medium
+    display: none
+
+.mobile__visible
+  display: none
+  @include medium
+    display: block
+
 .logo
-  width: 130px
+  a
+    img
+      max-width: 130px
+    @include medium
+      display: flex
+      align-items: center
+      justify-content: center
+      img
+        max-width: 80px
 
 .header__wrapper
   padding: 25px 0 45px 0
+  background: #ffffff
+  overflow: hidden
+  @include medium
+    background: #f9f9f9
+    padding: 25px 0 25px 0
   .search
     border-bottom: 1px solid #E4E4E4
     padding: 9px 0 16px 0
     position: relative
+    @include medium
+      display: none
     &::before
       position: absolute
       right: 3px
@@ -253,29 +327,51 @@ div
     input
       width: 90%
       color: #282828
-  .header__cart
-    align-self: flex-end
-    text-align: right
-    a
-      padding-right: 15px
-      position: relative
-    .cart__count
-      display: flex
-      align-items: center
-      justify-content: center
+
+.header__cart
+  align-self: flex-end
+  text-align: right
+  position: relative
+  @include medium
+    align-self: center
+    &::before
+      content: ''
       position: absolute
-      top: -16px
-      right: 0
-      width: 24px
-      height: 24px
-      font-size: 14px
-      color: #FFFFFF
-      background: #342E58
-      border-radius: 50%
+      left: 40px
+      top: -12px
+      width: 157px
+      height: 49px
+      background: #FFFFFF
+      border-radius: 100px
+  a
+    padding-right: 15px
+    position: relative
+    @include medium
+      img
+        max-width: 24px
+  .cart__count
+    display: flex
+    align-items: center
+    justify-content: center
+    position: absolute
+    top: -16px
+    right: 0
+    width: 24px
+    height: 24px
+    font-size: 14px
+    color: #FFFFFF
+    background: #342E58
+    border-radius: 50%
+    @include medium
+      width: 20px
+      height: 20px
+      top: -8px
 
 .header__navbar
   background: #E56943
   padding: 11px 0
+  @include medium
+    display: none
   .container
     display: flex
     justify-content: space-between
@@ -322,6 +418,87 @@ div
   .catalog__submenu
     display: none
 
+.burger
+  display: none
+  @include medium
+    display: block
+  span
+    display: block
+    width: 16px
+    height: 2px
+    background: rgba(0, 0, 0, 0.7)
+    position: absolute
+    top: 0
+    bottom: 0
+    margin: auto
+    &::before
+      content: ''
+      position: absolute
+      top: -10px
+      width: 32px
+      height: 2px
+      background: rgba(0, 0, 0, 0.7)
+    &::after
+      content: ''
+      position: absolute
+      top: 10px
+      width: 32px
+      height: 2px
+      background: rgba(0, 0, 0, 0.7)
+
+.mobile__navbar
+  display: none
+  position: fixed
+  top: 0
+  left: 0
+  height: 100vh
+  width: 100%
+  background: #e56943
+  z-index: 10
+  .mobile__top
+    padding: 25px 0
+    .close
+      position: relative
+      &::before
+        content: ''
+        position: absolute
+        top: 15px
+        left: 40px
+        width: 28px
+        height: 1px
+        background: #FFFFFF
+        transform: rotate(45deg)
+      &::after
+        content: ''
+        position: absolute
+        top: 15px
+        left: 40px
+        width: 28px
+        height: 1px
+        background: #FFFFFF
+        transform: rotate(135deg)
+    .header__cart
+      &::before
+        left: 10px
+      a
+        top: 2px
+        padding-right: 34px
+      .cart__count
+        left: 19px
+  .mobile__wrapper
+    margin: 0 20px
+  .navbar__wrapper
+    flex-direction: column
+    li
+      font-size: 24px
+      font-weight: normal
+      text-transform: inherit
+      color: #FFFFFF
+      padding: 22px 0
+      border-top: 1px solid rgba(255, 255, 255, 0.05)
+      &:last-child
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05)
+
 .slide__item
   display: flex
   justify-content: center
@@ -329,23 +506,36 @@ div
   position: relative
   height: 733px
   overflow: hidden
+  @include medium
+    height: 450px
   .aling__center
+    @include medium
+      background: rgba(0, 0, 0, 0.4)
     .slide__wrapper
       width: 80%
       padding: 15px
+      @include medium
+        width: 100%
     p
       margin: 0
     .slide__title
       font-size: 100px
       font-weight: bold
+      @include medium
+        font-size: 36px
+        padding: 6px 0
     .slide__sub-title
       font-size: 46px
       font-weight: 300
+      @include medium
+        font-size: 20px
     .slide__desc
       font-weight: 400
       line-height: 1.7em
       width: 48%
       margin: 15px auto
+      @include medium
+        width: 100%
     .slide__link
       margin-top: 45px
 
@@ -360,10 +550,19 @@ div
     width: calc(100%/3)
     overflow: hidden
     position: relative
+    @include medium
+      width: calc(100%/2)
+      height: 188px
+      &:last-child
+        width: 100%
+        height: 200px
     .aling__center
       background: rgba(0, 0, 0, 0.4)
     .catalog__title
       font-size: 28px
+      @include medium
+        font-size: 18px
+        padding: 20px
     .btn
       position: absolute
       margin-top: 70px
@@ -376,6 +575,9 @@ div
   display: flex
   align-items: center
   justify-content: flex-end
+  @include medium
+    justify-content: space-between
+    margin-bottom: 20px
   input
     width: 0
     display: none
@@ -391,6 +593,8 @@ div
     margin-top: 10px
     box-sizing: border-box
     cursor: pointer
+    @include medium
+      margin-top: 0
     &:last-child
       padding-right: 0
       margin-right: 0
@@ -404,6 +608,8 @@ div
   font-size: 12px
   color: #FFFFFF
   text-transform: uppercase
+  @include medium
+    font-size: 10px
   span
     padding: 0 8px
     margin-bottom: 9px
@@ -416,27 +622,41 @@ div
 
 .product__price
   display: flex
+  flex-wrap: wrap
   justify-content: space-between
   padding: 17px 0 29px 0
   color: #E56943
   font-size: 20px
   font-weight: 600
+  @include medium
+    flex-direction: column
+    font-size: 14px
+    padding: 0
   .old__price
     font-size: 16px
     font-weight: normal
     color: rgba(96, 96, 96, 0.5)
+    text-decoration: line-through
+    @include medium
+      font-size: 10px
   span
     font-size: 16px
     font-weight: normal
     color: rgba(96, 96, 96, 0.5)
+    @include medium
+      font-size: 10px
   .order
     color: #342E58
 
 .products__wrapper
   padding-bottom: 55px
+  @include medium
+    padding-bottom: 0
   .products__item
     position: relative
     padding-bottom: 30px
+    @include medium
+      padding-bottom: 24px
     &:hover
       &::before
         content: ''
@@ -461,19 +681,37 @@ div
       background: #FFFFFF
       border-radius: 5px
       position: relative
+      @include medium
+        height: 184px
+      img
+        max-height: 100%
     .product__tags
       left: 16px
       top: 12px
+      @include medium
+        flex-direction: row
+        justify-content: space-between
+        width: 100%
+        left: 0
+        padding: 0 16px
+        font-size: 10px
+        span
+          margin-bottom: 0
     .products__desc
       position: relative
       padding: 25px 0 0
       line-height: 1.5rem
+      @include medium
+        padding: 12px 0 0
+        line-height: inherit
       a
         &:not(.btn)
           color: #606060
     .products__title
       height: 50px
       display: block
+      @include medium
+        font-size: 12px
     .btn_buy
       display: none
       position: absolute
@@ -486,23 +724,44 @@ div
 
 .text
   line-height: 1.5rem
+  @include medium
+    line-height: inherit
+    font-size: 12px
   p
     margin: 0 0 30px 0
+    @include medium
+      margin: 0 0 7px 0
   .btn
     margin-top: 20px
 
 .about-company__img
+  @include medium
+    padding: 13px 0
   img
     max-width: 982px
     position: relative
     top: -100px
+    @include medium
+      max-width: 100%
+      top: 0
+
+.order__text
+  @include medium
+    order: 2
 
 .faq__img
+  @include medium
+    position: absolute
+    right: -150px
   img
     max-width: 1019px
     position: relative
     left: -265px
     top: -235px
+    @include medium
+      max-width: 665px
+      left: 0px
+      top: -115px
 
 .logotype__img
   img
@@ -511,13 +770,23 @@ div
     top: -45px
     left: -80px
     z-index: -1
+    @include medium
+      max-width: 666px
+      top: 0
+      left: 0
 
 .delivery__img
+  @include medium
+    display: flex
+    justify-content: center
   img
     max-width: 868px
     position: absolute
     top: -150px
     left: -100px
+    @include medium
+      max-width: 414px
+      position: initial
 
 .faq__wrapper
   .h2
@@ -530,17 +799,26 @@ div
     font-weight: 300
     color: rgba(0, 0, 0, 0.8)
     padding-bottom: 20px
+    @include medium
+      font-size: 14px
 
 .form
   input
     padding: 12px 14px 10px 14px
     margin-bottom: 20px
+    @include medium
+      padding: 9px 11px 9px 11px
   textarea
-    padding: 10px 30px
+    padding: 12px 14px 10px 14px
     height: 84px
     margin-bottom: 28px
+    @include medium
+      padding: 9px 11px 9px 11px
   .btn__submit
     padding: 15px 40px
+    @include medium
+      font-size: 16px
+      padding: 13px 5px
 
 .contacts__wrapper
   padding-top: 25px
@@ -566,12 +844,13 @@ div
         margin: 0
         padding: 0 0 47px
         z-index: 2
-  .product__tags
-    .new
-      background: #2B2B2B
+        @include medium
+          padding: 0 0 17px
 
 .breadcrumbs
   padding: 35px 10px 50px
+  @include medium
+    padding: 5px 10px 45px
   a
     color: rgba(0, 0, 0, 0.2)
     padding-right: 50px
@@ -652,8 +931,11 @@ div
             border-bottom: 1px solid #FFFFFF
             border-left: 1px solid #FFFFFF
             transform: rotate(-45deg)
+      .dropdown__submenu
+        display: block
 
 .dropdown__submenu
+  display: none
   li
     a
       background: #F5F3FF
@@ -672,7 +954,9 @@ div
   .title
     color: rgba(0, 0, 0, 0.7)
     padding-bottom: 16px
-  input
+
+input
+  &.none
     width: 0
     display: none
     &:checked
@@ -680,15 +964,339 @@ div
         &::before
           background: #342E58 url("data:image/svg+xml,%3Csvg width='10' height='8' viewBox='0 0 10 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.85356 0.474458C9.65831 0.279185 9.34175 0.279185 9.14645 0.474458L3.15614 6.46483L0.853564 4.16225C0.658311 3.96698 0.341748 3.967 0.146455 4.16225C-0.0488184 4.3575 -0.0488184 4.67407 0.146455 4.86934L2.80259 7.52543C2.99778 7.72069 3.31458 7.72055 3.5097 7.52543L9.85356 1.18157C10.0488 0.986313 10.0488 0.669731 9.85356 0.474458Z' fill='white'/%3E%3C/svg%3E ") no-repeat center
           border: 1px solid #342E58
-  label
-    font-size: 14px
-    color: rgba(0, 0, 0, 0.5)
-    padding-bottom: 11px
-    padding-left: 23px
-    position: relative
-    cursor: pointer
+.label
+  font-size: 14px
+  color: rgba(0, 0, 0, 0.5)
+  padding-bottom: 11px
+  padding-left: 23px
+  position: relative
+  cursor: pointer
+  &:last-child
+    padding-bottom: 0
+  &::before
+    content: ''
+    position: absolute
+    left: 0
+    top: 2px
+    width: 16px
+    height: 16px
+    border: 1px solid #C4C4C4
+    border-radius: 3px
+
+.product__wrapper
+  border-top: 0.5px solid rgba(0, 0, 0, 0.15)
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.15)
+  @include medium
+    border-top: none
+    border-bottom: none
+  .product__img
+    border-right: 0.5px solid rgba(0, 0, 0, 0.15)
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 10px
+    @include medium
+      border-right: none
+    img
+      max-height: 590px
+    .product__tags
+      right: 29px
+      left: auto
+      top: 41px
+      @include medium
+        right: 22px
+        top: 26px
+  .product__desc
+    padding: 34px 0 20px 20px
+    color: rgba(96, 96, 96, 0.5)
+    @include medium
+      padding: 23px 10px 23px 10px
+  .product__title
+    font-size: 24px
+    font-weight: bold
+    line-height: 33px
+    color: rgba(0, 0, 0, 0.75)
+    text-transform: uppercase
+    @include medium
+      color: rgba(0, 0, 0, 0.65)
+      margin-bottom: 10px
+  .product__price
+    justify-content: inherit
+    @include medium
+      flex-direction: row
+      font-size: 20px
+      margin-bottom: 19px
+      span
+        font-size: 16px
+    .old__price
+      margin-left: 20px
+      @include medium
+        font-size: 16px
+        margin-left: 30px
+  .property__wrapper
+    li
+      padding-bottom: 20px
+      @include medium
+        padding-bottom: 11px
+      &.property__volume
+        span
+          padding-right: 0
+      span
+        color: rgba(0, 0, 0, 0.65)
+        padding-right: 11px
+  .volume__tabs
+    display: flex
+    flex-wrap: wrap
+    color: #595959
+    margin-top: 12px
+    @include medium
+      margin-bottom: 11px
+    li
+      box-sizing: border-box
+      padding: 7px 22px
+      text-align: center
+      border: 1px solid #595959
+      border-radius: 5px
+      margin-right: 3px
+      margin-bottom: 3px
+      cursor: pointer
+      @include medium
+        padding: 9px 0
+        width: calc(100%/3 - 3px)
+        box-sizing: border-box
+      &.active
+        font-weight: 600
+        color: #FFFFFF
+        background: #342E58
+        border: 1px solid #342E58
+  .product__quantity
+    display: flex
+    li
+      margin-right: 55px
+      span
+        color: rgba(0, 0, 0, 0.65)
+        padding-left: 5px
+      &:last-child
+        margin-right: 0
+
+.btn__box
+  margin-top: 34px
+  @include medium
+    display: flex
+    justify-content: space-between
+    .btn
+      margin-right: 16px !important
+  .btn
+    border: 1px solid #E56943
+    margin-right: 41px
     &:last-child
-      padding-bottom: 0
+      margin-right: 0
+    &.btn__border
+      color: #595959
+      background: transparent
+      border: 1px solid #E56943
+
+.product__count
+  display: flex
+  margin: 20px 0
+  input
+    width: 100px
+    border: 1px solid #E0E0E0
+    border-radius: 4px
+    text-align: center
+    padding: 8px 0
+    margin: 0 15px
+    @include medium
+      width: 80px
+      padding: 0
+      margin: 0 6px
+  span
+    display: block
+    position: relative
+    width: 40px
+    height: 40px
+    background: #EAEAEA
+    border-radius: 4px
+    cursor: pointer
+    @include medium
+      width: 30px
+      height: 30px
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      margin: auto
+      width: 10px
+      height: 1px
+      background: #595959
+    &.plus
+      &::after
+        content: ''
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        margin: auto
+        width: 10px
+        height: 1px
+        background: #595959
+        transform: rotate(90deg)
+
+.checked__all
+  margin-bottom: 40px
+  margin-left: 15px
+  label
+    font-size: 16px
+    color: rgba(0, 0, 0, 0.5)
+    padding-left: 30px
+
+.cart__wrapper
+  margin-bottom: 104px
+  .cart__item
+    background: #FFFFFF
+    box-shadow: 2px 2px 30px rgba(187, 187, 187, 0.05)
+    border-radius: 8px
+    margin-bottom: 14px
+    padding: 38px 0 30px 0
+    @include medium
+      margin:
+  .checkbox__box
+    display: flex
+    justify-content: center
+    align-items: center
+    .label
+      &::before
+        left: 4px
+        top: -8px
+  .item__info
+    display: flex
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08)
+    padding-bottom: 39px
+  .item__img
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 80px
+    height: 97px
+    border: 1px solid rgba(0, 0, 0, 0.1)
+    border-radius: 5px
+    padding: 5px
+    margin-right: 12px
+  .item__desc
+    width: calc(100% - 92px)
+    a
+      display: inline-block
+      color: #606060
+      padding: 10px 0 20px 0
+  .item__group
+    display: flex
+    justify-content: space-between
+    align-items: center
+    .product__price
+      padding: 0
+      font-weight: bold
+      .old__price
+        margin-left: 24px
+    .product__count
+      margin: 0
+  .item__total
+    font-weight: bold
+    color: rgba(0, 0, 0, 0.7)
+    margin-top: 25px
+    span
+      font-size: 20px
+      color: #E56943
+      margin-left: 18px
+
+.sum__wrapper
+  background: #FFFFFF
+  box-shadow: 2px 2px 30px rgba(187, 187, 187, 0.05)
+  border-radius: 8px
+  padding: 20px 40px
+  @include medium
+    background: #EEE6E3
+    box-shadow: 0px -10px 10px rgba(187, 187, 187, 0.15)
+    border-radius: 8px 8px 0px 0px
+    color: #606060
+  .h3
+    font-size: 24px
+    font-weight: bold
+    color: rgba(0, 0, 0, 0.75)
+  .sum__list
+    padding: 5px 0 25px 0
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08)
+    li
+      display: flex
+      justify-content: space-between
+      padding: 7px 0
+  .sum__total
+    display: flex
+    justify-content: space-between
+    padding: 27px 0
+    font-weight: 600
+    color: #2B2B2B
+    span
+      font-size: 20px
+      font-weight: bold
+      color: #E56943
+  .btn
+    width: 100%
+    margin: 12px 0 26px 0
+
+.cart__form
+  form
+    background: #FFFFFF
+    box-shadow: 2px 2px 30px rgba(187, 187, 187, 0.05)
+    border-radius: 8px
+    padding: 16px 44px 40px 44px
+    @include medium
+      padding: 10px 4px 40px 4px
+    .h3
+      font-size: 24px
+      font-weight: bold
+      color: rgba(0, 0, 0, 0.75)
+      padding: 20px 0 25px 0
+      @include medium
+        font-size: 18px
+        color: rgba(0, 0, 0, 0.75)
+
+.buyer__form
+  .title
+    color: rgba(0, 0, 0, 0.7)
+    margin-right: 37px
+  input
+    border: 1px solid rgba(0, 0, 0, 0.2)
+    border-radius: 5px
+    @include medium
+      margin-bottom: 9px
+    &[type='radio']
+      width: 0
+      display: none
+      &:checked+[for]
+        &::before
+          border: 1px solid #342E58
+        &::after
+          content: ''
+          position: absolute
+          left: 4px
+          top: 6px
+          width: 10px
+          height: 10px
+          background: #342e58
+          border-radius: 50%
+  textarea
+    border: 1px solid rgba(0, 0, 0, 0.2)
+    border-radius: 5px
+  label
+    position: relative
+    padding-left: 27px
+    margin-right: 70px
+    &:last-child
+      margin-right: 0
     &::before
       content: ''
       position: absolute
@@ -696,13 +1304,56 @@ div
       top: 2px
       width: 16px
       height: 16px
-      border: 1px solid #C4C4C4
-      border-radius: 3px
+      border: 1px solid #DADADA
+      border-radius: 50%
+  .delivery__terms
+    display: flex
+
+.page__404
+  position: relative
+  overflow: hidden
+  @include medium
+    text-align: center
+  &::before
+    content: url("data:image/svg+xml,%3Csvg width='1267' height='852' viewBox='0 0 1267 852' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0H1267V852L808.349 772.585C428.706 706.851 120.596 428.856 16.2958 57.9504L0 0Z' fill='%23E56943'/%3E%3C/svg%3E%0A")
+    position: absolute
+    top: 0
+    right: 0
+    z-index: -10
+  @include medium
+    &::before
+      content: none
+
+.wrapper__404
+  align-items: center
+  p
+    margin: 0
+    &.desc
+      margin-top: 28px
+  .title__1
+    font-size: 100px
+    color: rgba(0, 0, 0, 0.75)
+    line-height: 136px
+    @include medium
+      font-size: 50px
+      line-height: 1.5
+  .title__2
+    font-size: 40px
+    font-weight: 300
+    color: rgba(0, 0, 0, 0.75)
+    line-height: 54px
+    @include medium
+      font-size: 24px
+      line-height: 1.5
 
 footer
   background: #342E58
   color: #898594
   padding: 47px 0
+  @include medium
+    padding: 28px 0
+    .footer__catalog
+      text-align: right
   a
     color: #898594
   .title
@@ -710,9 +1361,20 @@ footer
   .footer__navbar
     margin-top: 80px
     text-align: center
+    @include medium
+      margin-top: 18px
+      margin-bottom: 9px
+      padding-top: 24px
+      border-top: 1px solid rgba(137, 133, 148, 0.5)
     a
       position: relative
       padding: 0 16px
+      @include medium
+        display: inline-block
+        margin-bottom: 13px
+        &:nth-child(3)
+          &::after
+            content: none
       &:last-child
         &::after
           content: none

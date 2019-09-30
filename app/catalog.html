@@ -15,14 +15,27 @@
       <div class="header__wrapper">
         <div class="container">
           <div class="row">
-            <div class="lg-3 logo"><a href="#"><img src="./img/logo.png"></a></div>
-            <div class="lg-6">
+            <div class="md-4 burger"><span></span></div>
+            <div class="lg-3 md-4 logo"><a href="#"><img src="./img/logo.png"></a></div>
+            <div class="lg-6 mobile__hidden">
               <div class="search">
                 <input type="search" placeholder="Поиск товара">
               </div>
             </div>
-            <div class="lg-3 header__cart"><a href="#"><img src="./img/shopping-cart.svg"><span class="cart__count">0</span></a></div>
+            <div class="lg-3 md-4 header__cart"><a href="#"><img src="./img/shopping-cart.svg"><span class="cart__count">0</span></a></div>
           </div>
+        </div>
+      </div>
+      <div class="mobile__navbar">
+        <div class="row mobile__top">
+          <div class="md-4 close"></div>
+          <div class="md-4 logo"><a href="#"><img src="./img/logo-mob.png"></a></div>
+          <div class="md-4 mobile__cart"></div>
+        </div>
+        <div class="mobile__wrapper"></div>
+        <div class="row mobile__adress">
+          <div class="sm-6"><a class="phone" href="#">8 (017) 291-06-05</a><a class="phone" href="#">8 (017) 291-06-05</a></div>
+          <div class="sm-6"><span class="adress">Адрес: г.Минск ул. Бабушкина 54, к.205</span></div>
         </div>
       </div>
       <div class="header__navbar">
@@ -135,7 +148,7 @@
           <div class="lg-12">
             <div class="h2">Описание раздела<span>О Разделе</span></div>
           </div>
-          <div class="text">
+          <div class="lg-12 text">
             <p>Краткое описание: В данном блоке отображается информация о компании и преимуществах ее работы. Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке. Краткое описание: В данном блоке отображается информация о компании и преимуществах ее работы. Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке.</p>
             <p>Краткое описание: В данном блоке отображается информация о компании и преимуществах ее работы. Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке.</p>
           </div>
@@ -145,7 +158,7 @@
     <footer>
       <div class="container">
         <div class="row">
-          <div class="lg-4">
+          <div class="lg-4 md-6">
             <div class="box">
               <p class="title">Телефоны</p>
               <p><a href="#">8 (017) 291-06-03</a><a href="#">8 (017) 291-06-05</a></p>
@@ -159,13 +172,13 @@
               <p><a href="#">amik@paket.by</a></p>
             </div>
           </div>
-          <div class="lg-3 footer__catalog">
+          <div class="lg-3 md-6 footer__catalog">
             <div class="box">
               <p class="title">Каталог</p>
               <p><a href="#">Стаканы</a><a href="#">Крышки</a><a href="#">Упаковка</a><a href="#">Контейнеры</a><a href="#">Креманки</a><a href="#">Посуда</a><a href="#">Дополнительный ассортимент</a><a href="#">Упаковочная бумага</a><a href="#">Акции</a></p>
             </div>
           </div>
-          <div class="lg-5">
+          <div class="lg-5 md-12">
             <div class="box">
               <p class="title">Время работы</p>
               <p>Время работы: Пн-пт: 8-00 - 17-00, Сб, Вс:  выходной</p>
@@ -186,6 +199,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/libs.min.js"></script>
     <script src="./js/main.min.js"></script>
   </body>
 </html>

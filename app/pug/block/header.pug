@@ -5,16 +5,34 @@ header
     .header__wrapper
         .container
             .row
-                .lg-3.logo
+                .md-4.burger
+                    span
+                .lg-3.md-4.logo
                     a(href='#')
                         img(src='./img/logo.png')
-                .lg-6
+                .lg-6.mobile__hidden
                     .search
                         input(type='search' placeholder='Поиск товара')
-                .lg-3.header__cart
+                .lg-3.md-4.header__cart
                     a(href='#')
                         img(src='./img/shopping-cart.svg')
                         span.cart__count 0
+
+    .mobile__navbar
+        .row.mobile__top
+            .md-4.close
+            .md-4.logo
+                a(href='#')
+                    img(src='./img/logo-mob.png')
+            .md-4.mobile__cart
+        .mobile__wrapper
+        .row.mobile__adress
+            .sm-6
+                a.phone(href='#') 8 (017) 291-06-05
+                a.phone(href='#') 8 (017) 291-06-05
+            .sm-6
+                span.adress Адрес: г.Минск ул. Бабушкина 54, к.205
+
     .header__navbar
         .container
             ul.navbar__wrapper

@@ -76,19 +76,19 @@ html(lang='UTF-8')
         #our-products.section.bg__gray
             .container
                 .row
-                    .lg-8
+                    .lg-8.md-12
                         .h2 Наши товары
                             span Товары
-                    .lg-4.tabs__filter
-                        input(type='radio' id='stock' checked)
+                    .lg-4.md-12.tabs__filter
+                        input(type='radio' id='stock' name='filter' checked)
                         label(for='stock') Акции
-                        input(type='radio' id='new')
+                        input(type='radio' id='new' name='filter')
                         label(for='new') Новинки
-                        input(type='radio' id='order')
+                        input(type='radio' id='order' name='filter')
                         label(for='order') Под заказ
                     .lg-12
                         .row.products__wrapper
-                            .lg-3.products__item
+                            .lg-3.md-6.products__item
                                 .products__img
                                     img.img(src='./img/product-4.png')
                                     .product__tags
@@ -101,7 +101,7 @@ html(lang='UTF-8')
                                         li от 2,55 BYN/
                                             span 1000 шт
                                 a.btn.btn_buy(href='#') Купить
-                            .lg-3.products__item
+                            .lg-3.md-6.products__item
                                 .products__img
                                     img.img(src='./img/product-2.png')
                                     .product__tags
@@ -114,7 +114,7 @@ html(lang='UTF-8')
                                         li от 2,55 BYN/
                                             span 1000 шт
                                 a.btn.btn_buy(href='#') Купить
-                            .lg-3.products__item
+                            .lg-3.md-6.products__item
                                 .products__img
                                     img.img(src='./img/product-1.png')
                                     .product__tags
@@ -125,7 +125,7 @@ html(lang='UTF-8')
                                     ul.product__price
                                         li.order Под заказ
                                 a.btn.btn_buy(href='#') Купить
-                            .lg-3.products__item
+                            .lg-3.md-6.products__item
                                 .products__img
                                     img.img(src='./img/product-3.png')
                                     .product__tags
@@ -145,20 +145,20 @@ html(lang='UTF-8')
                     .lg-12
                         .h2 О компании
                             span О компании
-                    .lg-6
+                    .lg-6.md-12.order__text
                         .text
                             p ООО “Амик-О” является крупнейшим производителем и поставщиком бумажной продукции на территории Республики Беларусь. Компания создана в 1992 г. и на протяжении многих лет успешно работает на рынке упаковки. Одним из основных и приоритетных направлений компании является реализация бумажной упаковки.
                             p Независимые исследования показали, что при прочих равных условиях покупатели выбирают товары, имеющие стильную, прочную и экологичную упаковку. Именно поэтому так важно, как и во что упакована ваша продукция.
                             a.btn(href='#') Подробнее
-                    .lg-6.about-company__img
+                    .lg-6.md-12.about-company__img
                         img(src='./img/image-1.png')
 
         #faq.section.bg__beige
             .container
                 .row
-                    .lg-6.faq__img
+                    .lg-6.md-12.faq__img
                         img(src='./img/image-2.png')
-                    .lg-6.faq__wrapper
+                    .lg-6.md-12.faq__wrapper
                         .h2 Остались вопросы?
                             span Вопросы?
                         p Заполните форму связи и мы свяжемся с вами
@@ -178,4 +178,5 @@ html(lang='UTF-8')
 
         include ../block/footer
 
+        script(src='./js/libs.min.js')
         script(src='./js/main.min.js')

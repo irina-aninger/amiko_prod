@@ -15,14 +15,27 @@
       <div class="header__wrapper">
         <div class="container">
           <div class="row">
-            <div class="lg-3 logo"><a href="#"><img src="./img/logo.png"></a></div>
-            <div class="lg-6">
+            <div class="md-4 burger"><span></span></div>
+            <div class="lg-3 md-4 logo"><a href="#"><img src="./img/logo.png"></a></div>
+            <div class="lg-6 mobile__hidden">
               <div class="search">
                 <input type="search" placeholder="Поиск товара">
               </div>
             </div>
-            <div class="lg-3 header__cart"><a href="#"><img src="./img/shopping-cart.svg"><span class="cart__count">0</span></a></div>
+            <div class="lg-3 md-4 header__cart"><a href="#"><img src="./img/shopping-cart.svg"><span class="cart__count">0</span></a></div>
           </div>
+        </div>
+      </div>
+      <div class="mobile__navbar">
+        <div class="row mobile__top">
+          <div class="md-4 close"></div>
+          <div class="md-4 logo"><a href="#"><img src="./img/logo-mob.png"></a></div>
+          <div class="md-4 mobile__cart"></div>
+        </div>
+        <div class="mobile__wrapper"></div>
+        <div class="row mobile__adress">
+          <div class="sm-6"><a class="phone" href="#">8 (017) 291-06-05</a><a class="phone" href="#">8 (017) 291-06-05</a></div>
+          <div class="sm-6"><span class="adress">Адрес: г.Минск ул. Бабушкина 54, к.205</span></div>
         </div>
       </div>
       <div class="header__navbar">
@@ -83,17 +96,27 @@
           <div class="lg-12 breadcrumbs"><a href="#">Главная</a><a href="#">Каталог</a><a class="active" href="#">Стаканы</a></div>
           <div class="lg-12">
             <div class="row product__wrapper">
-              <div class="lg-6 product__img"><img class="img" src="./img/product-4.png">
+              <div class="md-12 mobile__visible product__title">Стаканчик бумажный одностойный, крафт</div>
+              <div class="lg-6 md-12 product__img"><img class="img" src="./img/product-5.png">
                 <div class="product__tags"><span class="sale">Sale</span><span class="new">New</span></div>
               </div>
-              <div class="lg-6">
-                <div class="product__title"></div>
+              <div class="lg-6 md-12 product__desc">
+                <div class="mobile__hidden product__title">Стаканчик бумажный одностойный, крафт</div>
                 <ul class="product__price">
                   <li>2,55 BYN/<span>1000 шт</span></li>
                   <li class="old__price">3,40 руб</li>
                 </ul>
                 <ul class="property__wrapper">
-                  <li><span class="title">Размер,</span>мм</li>
+                  <li class="property__volume"><span class="title">Размер,</span> мм
+                    <ul class="volume__tabs">
+                      <li>80*50*170</li>
+                      <li>260*150*340</li>
+                      <li>80*50*170</li>
+                      <li>80*50*170</li>
+                      <li>80*50*170</li>
+                      <li>80*50*170</li>
+                    </ul>
+                  </li>
                   <li><span class="title">Артикул:</span>АР215-567</li>
                   <li><span class="title">Описание стакана:</span>Стакан гофрированный, двухслойный</li>
                   <li><span class="title">Размер:</span>d1- 80 х d2 - 56 х h - 92</li>
@@ -101,15 +124,65 @@
                   <li><span class="title">Плотность:</span>260+18PE 120/120  г/м2;</li>
                 </ul>
                 <div class="product__count"><span class="minus"></span>
-                  <input type="number" value="1"><span class="plus"></span>
+                  <input class="count" type="number" value="1000"><span class="plus"></span>
                 </div>
                 <ul class="product__quantity">
-                  <li>Количество в кробке:<span>500 шт</span></li>
+                  <li class="mobile__hidden">Количество в кробке:<span>500 шт</span></li>
                   <li>Количество в упаковке:<span>25 шт</span></li>
                 </ul>
-                <div class="btn__box"><a class="btn" id="order" href="#">Заказать</a><a class="btn" id="add-cart" href="#">В корзину</a></div>
+                <div class="btn__box"><a class="btn" id="order" href="#">Заказать</a><a class="btn btn__border" id="add-cart" href="#">В корзину</a></div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="h2">Сопутствующие товары<span>Сопутствующие</span></div>
+        <div class="row products__wrapper">
+          <div class="lg-3 md-6 products__item">
+            <div class="products__img"><img class="img" src="./img/product-4.png">
+              <div class="product__tags"><span class="sale">Sale</span><span class="new">New</span></div>
+            </div>
+            <div class="products__desc"><a class="products__title" href="#">Стаканчик бумажный однослойный,Кофе</a>
+              <ul class="product__price">
+                <li class="old__price">3,40 руб</li>
+                <li>от 2,55 BYN/<span>1000 шт</span></li>
+              </ul>
+            </div><a class="btn btn_buy" href="#">Купить</a>
+          </div>
+          <div class="lg-3 md-6 products__item">
+            <div class="products__img"><img class="img" src="./img/product-2.png">
+              <div class="product__tags"><span class="sale">Sale</span></div>
+            </div>
+            <div class="products__desc"><a class="products__title" href="#">Стакан бумажный однослойный, белый</a>
+              <ul class="product__price">
+                <li class="old__price">3,40 руб</li>
+                <li>от 2,55 BYN/<span>1000 шт</span></li>
+              </ul>
+            </div><a class="btn btn_buy" href="#">Купить</a>
+          </div>
+          <div class="lg-3 md-6 products__item">
+            <div class="products__img"><img class="img" src="./img/product-1.png">
+              <div class="product__tags"><span class="sale">Sale</span></div>
+            </div>
+            <div class="products__desc"><a class="products__title" href="#">Коробка бумажная для гамбургера Fiesta</a>
+              <ul class="product__price">
+                <li class="order">Под заказ</li>
+              </ul>
+            </div><a class="btn btn_buy" href="#">Купить</a>
+          </div>
+          <div class="lg-3 md-6 products__item">
+            <div class="products__img"><img class="img" src="./img/product-2.png">
+              <div class="product__tags"><span class="new">New</span></div>
+            </div>
+            <div class="products__desc"><a class="products__title" href="#">Обертка для фастфуд «Fiesta»</a>
+              <ul class="product__price">
+                <li class="old__price">3,40 руб</li>
+                <li>от 2,55 BYN/<span>1000 шт</span></li>
+              </ul>
+            </div><a class="btn btn_buy" href="#">Купить</a>
           </div>
         </div>
       </div>
@@ -117,7 +190,7 @@
     <footer>
       <div class="container">
         <div class="row">
-          <div class="lg-4">
+          <div class="lg-4 md-6">
             <div class="box">
               <p class="title">Телефоны</p>
               <p><a href="#">8 (017) 291-06-03</a><a href="#">8 (017) 291-06-05</a></p>
@@ -131,13 +204,13 @@
               <p><a href="#">amik@paket.by</a></p>
             </div>
           </div>
-          <div class="lg-3 footer__catalog">
+          <div class="lg-3 md-6 footer__catalog">
             <div class="box">
               <p class="title">Каталог</p>
               <p><a href="#">Стаканы</a><a href="#">Крышки</a><a href="#">Упаковка</a><a href="#">Контейнеры</a><a href="#">Креманки</a><a href="#">Посуда</a><a href="#">Дополнительный ассортимент</a><a href="#">Упаковочная бумага</a><a href="#">Акции</a></p>
             </div>
           </div>
-          <div class="lg-5">
+          <div class="lg-5 md-12">
             <div class="box">
               <p class="title">Время работы</p>
               <p>Время работы: Пн-пт: 8-00 - 17-00, Сб, Вс:  выходной</p>
@@ -158,6 +231,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/libs.min.js"></script>
     <script src="./js/main.min.js"></script>
   </body>
 </html>
