@@ -21,11 +21,12 @@ html(lang='UTF-8')
                     .lg-12
                         .row.product__wrapper
                             .md-12.mobile__visible.product__title Стаканчик бумажный одностойный, крафт
-                            .lg-6.md-12.product__img
-                                img.img(src='./img/product-5.png')
-                                .product__tags
-                                    span.sale Sale
-                                    span.new New
+                            .lg-6.md-12.product__img__wrapper
+                                .product__img
+                                    img.img(src='./img/product-5.png')
+                                    .product__tags
+                                        span.sale Sale
+                                        span.new New
                             .lg-6.md-12.product__desc
                                 .mobile__hidden.product__title Стаканчик бумажный одностойный, крафт
                                 ul.product__price
@@ -75,8 +76,8 @@ html(lang='UTF-8')
             .container
                 .h2 Сопутствующие товары
                     span Сопутствующие
-                .row.products__wrapper
-                    .lg-3.md-6.products__item
+                .row.products__wrapper.products__slider
+                    .lg-12.products__item
                         .products__img
                             img.img(src='./img/product-4.png')
                             .product__tags
@@ -89,7 +90,7 @@ html(lang='UTF-8')
                                 li от 2,55 BYN/
                                     span 1000 шт
                         a.btn.btn_buy(href='#') Купить
-                    .lg-3.md-6.products__item
+                    .lg-12.products__item
                         .products__img
                             img.img(src='./img/product-2.png')
                             .product__tags
@@ -101,7 +102,7 @@ html(lang='UTF-8')
                                 li от 2,55 BYN/
                                     span 1000 шт
                         a.btn.btn_buy(href='#') Купить
-                    .lg-3.md-6.products__item
+                    .lg-12.products__item
                         .products__img
                             img.img(src='./img/product-1.png')
                             .product__tags
@@ -111,7 +112,7 @@ html(lang='UTF-8')
                             ul.product__price
                                 li.order Под заказ
                         a.btn.btn_buy(href='#') Купить
-                    .lg-3.md-6.products__item
+                    .lg-12.products__item
                         .products__img
                             img.img(src='./img/product-2.png')
                             .product__tags

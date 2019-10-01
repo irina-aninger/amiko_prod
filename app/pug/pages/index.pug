@@ -14,12 +14,30 @@ html(lang='UTF-8')
         .main__slider
             .slide__item
                 img.img__full(src='./img/slide-1.jpg')
-                .aling__center
-                    .slide__wrapper
-                        p.slide__title Экопродукция
-                        p.slide__sub-title Экологично и безопасно
-                        p.slide__desc ООО “Амик-О” является крупнейшим производителем и поставщиком бумажной продукции на территории Республики Беларусь. Компания создана в 1992 г. и на протяжении многих лет успешно работает на рынке упаковки.
-                        .slide__link
+                .aling__center.container
+                    ul.slide__wrapper
+                        li.slide__title Экопродукция
+                        li.slide__sub-title Экологично и безопасно
+                        li.slide__desc ООО “Амик-О” является крупнейшим производителем и поставщиком бумажной продукции на территории Республики Беларусь. Компания создана в 1992 г. и на протяжении многих лет успешно работает на рынке упаковки.
+                        li.slide__link
+                            a.btn(href='#') Подробнее
+            .slide__item
+                img.img__full(src='./img/slide-1.jpg')
+                .aling__center.container
+                    ul.slide__wrapper
+                        li.slide__title Экопродукция
+                        li.slide__sub-title Экологично и безопасно
+                        li.slide__desc ООО “Амик-О” является крупнейшим производителем и поставщиком бумажной продукции на территории Республики Беларусь. Компания создана в 1992 г. и на протяжении многих лет успешно работает на рынке упаковки.
+                        li.slide__link
+                            a.btn(href='#') Подробнее
+            .slide__item
+                img.img__full(src='./img/slide-1.jpg')
+                .aling__center.container
+                    ul.slide__wrapper
+                        li.slide__title Экопродукция
+                        li.slide__sub-title Экологично и безопасно
+                        li.slide__desc ООО “Амик-О” является крупнейшим производителем и поставщиком бумажной продукции на территории Республики Беларусь. Компания создана в 1992 г. и на протяжении многих лет успешно работает на рынке упаковки.
+                        li.slide__link
                             a.btn(href='#') Подробнее
 
         #our-production.section
@@ -45,7 +63,7 @@ html(lang='UTF-8')
                 .category__item
                     img.img__full(src='./img/category-4.png')
                     .aling__center
-                        .catalog__title Упако
+                        .catalog__title Упаковка
                         a.btn.btn__transp(href='#') В каталог
                 .category__item
                     img.img__full(src='./img/category-5.png')
@@ -87,8 +105,8 @@ html(lang='UTF-8')
                         input(type='radio' id='order' name='filter')
                         label(for='order') Под заказ
                     .lg-12
-                        .row.products__wrapper
-                            .lg-3.md-6.products__item
+                        .row.products__wrapper.products__slider
+                            .lg-12.products__item
                                 .products__img
                                     img.img(src='./img/product-4.png')
                                     .product__tags
@@ -101,7 +119,7 @@ html(lang='UTF-8')
                                         li от 2,55 BYN/
                                             span 1000 шт
                                 a.btn.btn_buy(href='#') Купить
-                            .lg-3.md-6.products__item
+                            .lg-12.products__item
                                 .products__img
                                     img.img(src='./img/product-2.png')
                                     .product__tags
@@ -114,7 +132,7 @@ html(lang='UTF-8')
                                         li от 2,55 BYN/
                                             span 1000 шт
                                 a.btn.btn_buy(href='#') Купить
-                            .lg-3.md-6.products__item
+                            .lg-12.products__item
                                 .products__img
                                     img.img(src='./img/product-1.png')
                                     .product__tags
@@ -125,7 +143,7 @@ html(lang='UTF-8')
                                     ul.product__price
                                         li.order Под заказ
                                 a.btn.btn_buy(href='#') Купить
-                            .lg-3.md-6.products__item
+                            .lg-12.products__item
                                 .products__img
                                     img.img(src='./img/product-3.png')
                                     .product__tags
@@ -168,7 +186,7 @@ html(lang='UTF-8')
                             .lg-6
                                 input(type='text' name='company-name' value='' placeholder='Название компании*' id='company-name')
                             .lg-6
-                                input(type='phone' name='phone' value='' placeholder='Номер телефона*' id='phone')
+                                input(type='tel' name='phone' value='' placeholder='Номер телефона*' id='phone')
                             .lg-6
                                 input(type='email' name='email' value='' placeholder='E-mail' id='email')
                             .lg-12

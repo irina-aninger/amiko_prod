@@ -31,8 +31,8 @@ gulp.task('sass', function () {
 
 gulp.task('css-libs', function() {
     return gulp.src([
-        'app/css/normalize.css'
-        // 'app/css/libs/*.css'
+        'app/css/normalize.css',
+        'app/css/libs/*.css'
     ])
         .pipe(concat('libs.css')) // Собираем их в кучу в новом файле libs.min.js
         .pipe(cssnano())
@@ -68,7 +68,7 @@ gulp.task('scripts', function () {
 
 gulp.task('scripts-libs', function() {
     return gulp.src([
-        'app/js/libs/jquery.js'
+        'app/js/libs/*.js'
     ])
         .pipe(concat('libs.js'))
         .pipe(jsmin())

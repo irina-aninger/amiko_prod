@@ -1,3 +1,26 @@
+// adaptive
+
+
+if ($(window).width() < 960) {
+    $('<div class="mobile__count"></div>').insertAfter($('.product__wrapper .product__price'));
+    $('.product__count').appendTo('.mobile__count');
+    $('.product__quantity').appendTo('.mobile__count');
+
+    $('.cart__item .item__info').each(function () {
+        $('<div class="cart__mobile"></div>').insertAfter($(this));
+        $(this).children('.item__desc').children('.item__group').appendTo($(this).next('.cart__mobile'));
+    });
+
+    $('.sum__wrapper').appendTo('#cart');
+    $('<div class="mobile__sum"></div>').appendTo($('.sum__wrapper'));
+    $('.sum__list').appendTo('.mobile__sum');
+    $('.sum__box').appendTo('.mobile__sum');
+    $('.btn#order').appendTo('.sum__wrapper');
+
+    $('.filter__wrapper').appendTo('.filter__pop-up .pop-up__body');
+}
+
+
 // mobile menu
 
 let mobileNav = document.querySelector('.mobile__navbar');
@@ -21,6 +44,35 @@ $('.dropdown__item a').children('.arrow').click(function (el) {
     el.preventDefault();
     $(this).parents('.dropdown__item').toggleClass('active');
     $('.arrow').not(this).parents('.dropdown__item').removeClass('active')
+});
+
+
+// slider
+
+$('.main__slider').slick({
+    dots: true,
+    arrows: false,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 4000
+});
+
+$('.products__slider').slick({
+    dots: false,
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    responsive: [
+        {
+            breakpoint: 991,
+            settings: {
+                arrows: true,
+                slidesToShow: 2
+            }
+        }
+    ]
 });
 
 
@@ -73,17 +125,18 @@ volumeTabs.addEventListener('click', function (e) {
     volumeTab.forEach( function (item) {
         item.classList.remove('active')
     });
-    e.classList.add('active')
+    e.target.classList.add('active')
 });
 
 
 // product to top cart
 
-let countCart = document.querySelector('.header__cart .cart__count'),
+let countCart = document.querySelector('.cart__count'),
     addCart   = document.querySelector('#add-cart');
 
-addCart.addEventListener('click', function () {
+addCart.addEventListener('click', function (el) {
+    el.preventDefault();
     if (count.value >= 1) {
-        return countCart.innerHTML++
+        countCart.innerHTML++
     }
 });

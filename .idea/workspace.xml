@@ -4,7 +4,34 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="754d6a86-70de-4575-a582-a55dedae8a8d" name="Default Changelist" comment="" />
+    <list default="true" id="754d6a86-70de-4575-a582-a55dedae8a8d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/catalog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/category.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/contacts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/css/libs.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/libs.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/style.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/delivery.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/delivery.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/js/libs.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/libs.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/js/main.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/main.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/logotypes.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/logotypes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/product.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/pug/block/header.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/pug/block/header.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/pug/pages/404.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/pug/pages/404.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/pug/pages/cart.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/pug/pages/cart.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/pug/pages/contacts.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/pug/pages/contacts.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/pug/pages/index.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/pug/pages/index.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/pug/pages/product.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/pug/pages/product.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/pug/pages/subcategory.pug" beforeDir="false" afterPath="$PROJECT_DIR$/app/pug/pages/subcategory.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/sass/style.sass" beforeDir="false" afterPath="$PROJECT_DIR$/app/sass/style.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/subcategory.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/subcategory.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -15,51 +42,51 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/pug/pages/product.pug">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="62" column="47" selection-start-line="62" selection-start-column="47" selection-end-line="62" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/js/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="535">
-              <caret line="88" column="3" lean-forward="true" selection-start-line="88" selection-start-column="3" selection-end-line="88" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/pug/pages/cart.pug">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="82" column="77" selection-start-line="82" selection-start-column="77" selection-end-line="82" selection-end-column="77" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/sass/style.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="1200" column="23" selection-start-line="1200" selection-start-column="23" selection-end-line="1200" selection-end-column="23" />
+            <state relative-caret-position="408">
+              <caret line="1142" column="2" selection-start-line="1142" selection-start-column="2" selection-end-line="1146" selection-end-column="36" />
               <folding>
-                <marker date="1569879367507" expanded="true" signature="20689:20726" ph="..." />
+                <marker date="1569951102198" expanded="true" signature="28995:29032" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/pug/pages/index.pug">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="86" column="67" selection-start-line="86" selection-start-column="67" selection-end-line="86" selection-end-column="67" />
+            <state relative-caret-position="299">
+              <caret line="129" lean-forward="true" selection-start-line="129" selection-end-line="129" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/pug/pages/subcategory.pug">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="339">
+              <caret line="38" column="46" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/pug/pages/contacts.pug">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="20" column="42" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/pug/pages/cart.pug">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -76,36 +103,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>text</find>
-      <find>about-company__img</find>
-      <find>h2</find>
-      <find>.h3</find>
-      <find>page__404</find>
-      <find>text__section</find>
-      <find>.breadcrumbs</find>
-      <find>.mobile__hidden</find>
-      <find>product__tags</find>
-      <find>product__desc</find>
-      <find>property__wrapper</find>
-      <find>btn__box</find>
-      <find>volume__tabs</find>
-      <find>cart__wrapper</find>
-      <find>product__quantity</find>
-      <find>cart__item</find>
-      <find>buyer__form</find>
-      <find>cart__form</find>
-      <find>h3</find>
-      <find>sum__wrapper</find>
-      <find>ac</find>
-      <find>btn</find>
-      <find>section</find>
-      <find>header__cart</find>
-      <find>mobile__navbar</find>
-      <find>.mobile__navbar</find>
-      <find>dropdown__submenu</find>
-      <find>product__count</find>
+      <find>product__img</find>
+      <find>_.$list</find>
+      <find>roducts__slider</find>
+      <find>.slick-list</find>
+      <find>slider</find>
+      <find>products__item</find>
+      <find>slick-list</find>
+      <find>.product__price</find>
       <find>product__price</find>
-      <find>tabs__filter</find>
+      <find>product__quantity</find>
+      <find>.text</find>
+      <find>wrapper__404</find>
+      <find>cart__item</find>
+      <find>item__total</find>
+      <find>cart__wrapper</find>
+      <find>checkbox__box</find>
+      <find>.checked__all</find>
+      <find>delivery__terms</find>
+      <find>buyer__form</find>
+      <find>.cart__wrapper</find>
+      <find>countCart.innerHTML</find>
+      <find>sum__total</find>
+      <find>section</find>
+      <find>contacts__wrapper</find>
+      <find>filter__wrapper</find>
+      <find>mobile-filter</find>
+      <find>sort__wrapper</find>
+      <find>mobile__filter</find>
+      <find>mobile__hidden</find>
+      <find>filter__</find>
     </findStrings>
     <replaceStrings>
       <replace>a.product__title(href='#')</replace>
@@ -129,30 +156,32 @@
         <option value="$PROJECT_DIR$/app/pug/templates/header.pug" />
         <option value="$PROJECT_DIR$/app/css/style.css" />
         <option value="$PROJECT_DIR$/app/pug/pages/product.js" />
-        <option value="$PROJECT_DIR$/app/pug/block/header.pug" />
         <option value="$PROJECT_DIR$/app/pug/block/footer.pug" />
         <option value="$PROJECT_DIR$/app/js/libs/jquery.js" />
-        <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/app/sass/grid.sass" />
-        <option value="$PROJECT_DIR$/app/pug/pages/404.pug" />
         <option value="$PROJECT_DIR$/app/pug/pages/catalog.pug" />
         <option value="$PROJECT_DIR$/app/pug/pages/category.pug" />
-        <option value="$PROJECT_DIR$/app/pug/pages/contacts.pug" />
         <option value="$PROJECT_DIR$/app/pug/pages/delivery.pug" />
         <option value="$PROJECT_DIR$/app/pug/pages/logotypes.pug" />
-        <option value="$PROJECT_DIR$/app/pug/pages/subcategory.pug" />
-        <option value="$PROJECT_DIR$/app/pug/pages/product.pug" />
-        <option value="$PROJECT_DIR$/app/js/main.js" />
-        <option value="$PROJECT_DIR$/app/sass/style.sass" />
+        <option value="$PROJECT_DIR$/app/pug/block/header.pug" />
+        <option value="$PROJECT_DIR$/gulpfile.js" />
+        <option value="$PROJECT_DIR$/app/js/libs/slick.js" />
         <option value="$PROJECT_DIR$/app/pug/pages/index.pug" />
+        <option value="$PROJECT_DIR$/app/css/libs/slick.css" />
+        <option value="$PROJECT_DIR$/app/pug/pages/product.pug" />
+        <option value="$PROJECT_DIR$/app/pug/pages/404.pug" />
         <option value="$PROJECT_DIR$/app/pug/pages/cart.pug" />
+        <option value="$PROJECT_DIR$/app/pug/pages/contacts.pug" />
+        <option value="$PROJECT_DIR$/app/pug/pages/subcategory.pug" />
+        <option value="$PROJECT_DIR$/app/sass/style.sass" />
+        <option value="$PROJECT_DIR$/app/js/main.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1479" />
-    <option name="width" value="1088" />
-    <option name="height" value="1057" />
+    <option name="x" value="1537" />
+    <option name="width" value="1023" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -183,6 +212,13 @@
               <item name="amiko_prod" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="libs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="amiko_prod" type="b2602c69:ProjectViewProjectNode" />
+              <item name="amiko_prod" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
               <item name="style.css" type="620a8d5e:NestingTreeNode" />
             </path>
             <path>
@@ -190,6 +226,13 @@
               <item name="amiko_prod" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="amiko_prod" type="b2602c69:ProjectViewProjectNode" />
+              <item name="amiko_prod" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="libs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="amiko_prod" type="b2602c69:ProjectViewProjectNode" />
@@ -253,27 +296,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1569491077058</updated>
-      <workItem from="1569491080371" duration="98671000" />
+      <workItem from="1569491080371" duration="119974000" />
+      <workItem from="1569947037208" duration="2680000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98671000" />
+    <option name="totallyTimeSpent" value="122654000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1479" y="0" width="1088" height="1057" extended-state="0" />
+    <frame x="1537" y="0" width="1023" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="npm" side_tool="true" />
-      <window_info id="Gulp" side_tool="true" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.1695238" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.19257087" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Inspection Results" weight="0.32900432" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.20562771" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Gulp" order="2" side_tool="true" />
+      <window_info id="npm" order="3" side_tool="true" />
+      <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -281,6 +320,11 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Inspection Results" order="9" weight="0.32900432" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.22900763" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -289,11 +333,11 @@
       <window_info id="Gulp" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="3" weight="0.24335378" />
+      <window_info content_ui="combo" id="Project" order="3" weight="0.19257087" />
       <window_info id="Structure" order="4" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection Results" order="1" weight="0.32900432" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="2" visible="true" weight="0.20562771" />
+      <window_info anchor="bottom" id="Terminal" order="2" visible="true" weight="0.22727273" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="4" />
       <window_info anchor="bottom" id="Message" order="5" />
@@ -326,13 +370,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/pug/templates/header.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1600">
-          <caret line="80" column="48" selection-start-line="80" selection-start-column="48" selection-end-line="80" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/pug/templates/header.pug" />
     <entry file="file://$PROJECT_DIR$/app/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="32120">
@@ -360,13 +398,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="58" column="3" lean-forward="true" selection-start-line="58" selection-start-column="3" selection-end-line="58" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/sass/grid.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="89">
@@ -374,24 +405,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/pug/block/header.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="27" column="24" lean-forward="true" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/pug/block/footer.pug">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="620">
           <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/pug/pages/404.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="29" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -409,13 +426,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/pug/pages/contacts.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="569">
-          <caret line="44" column="38" selection-start-line="44" selection-start-column="38" selection-end-line="44" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/pug/pages/delivery.pug">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="569">
@@ -430,48 +440,93 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/pug/pages/subcategory.pug">
+    <entry file="file://$PROJECT_DIR$/app/pug/block/header.pug">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="164" column="26" selection-start-line="164" selection-start-column="26" selection-end-line="164" selection-end-column="26" />
+        <state relative-caret-position="199">
+          <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/pug/pages/product.pug">
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="62" column="47" selection-start-line="62" selection-start-column="47" selection-end-line="62" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="535">
-          <caret line="88" column="3" lean-forward="true" selection-start-line="88" selection-start-column="3" selection-end-line="88" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/sass/style.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="1200" column="23" selection-start-line="1200" selection-start-column="23" selection-end-line="1200" selection-end-column="23" />
-          <folding>
-            <marker date="1569879367507" expanded="true" signature="20689:20726" ph="..." />
-          </folding>
+        <state relative-caret-position="527">
+          <caret line="188" lean-forward="true" selection-start-line="188" selection-end-line="188" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/pug/pages/index.pug">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="86" column="67" selection-start-line="86" selection-start-column="67" selection-end-line="86" selection-end-column="67" />
+        <state relative-caret-position="258">
+          <caret line="107" column="63" lean-forward="true" selection-start-line="107" selection-start-column="46" selection-end-line="107" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/libs/slick.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="2037" column="56" selection-start-line="2037" selection-start-column="45" selection-end-line="2037" selection-end-column="56" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/css/libs/slick.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="27" column="14" lean-forward="true" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/pug/pages/product.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="49">
+          <caret line="72" column="23" selection-start-line="72" selection-start-column="23" selection-end-line="72" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/pug/pages/404.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="23" column="40" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/pug/pages/contacts.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="20" column="42" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/pug/pages/cart.pug">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="82" column="77" selection-start-line="82" selection-start-column="77" selection-end-line="82" selection-end-column="77" />
+        <state relative-caret-position="280">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/pug/pages/subcategory.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="38" column="46" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/sass/style.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="1142" column="2" selection-start-line="1142" selection-start-column="2" selection-end-line="1146" selection-end-column="36" />
+          <folding>
+            <marker date="1569951102198" expanded="true" signature="28995:29032" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="129" lean-forward="true" selection-start-line="129" selection-end-line="129" />
         </state>
       </provider>
     </entry>
